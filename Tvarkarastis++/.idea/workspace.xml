@@ -2,25 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e3007fd-a1b6-47f1-b08f-d6fbf2ff3ec0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/tvarkarastis/bean/ConnectionProvider.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/tvarkarastis/bean/Event.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/tvarkarastis/bean/EventLister.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/tvarkarastis/bean/LoginBean.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/tvarkarastis/bean/LoginDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/tvarkarastis/bean/Provider.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/tvarkarastis/bean/RegisterDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/tvarkarastis/bean/User.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/tvarkarastis/config/RootConfig.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/tvarkarastis/config/WebConfig.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/tvarkarastis/config/WebInit.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/tvarkarastis/controller/HomeController.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/com/tvarkarastis/bean/ConnectionProvider.class" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/com/tvarkarastis/bean/ConnectionProvider.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/com/tvarkarastis/bean/Event.class" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/com/tvarkarastis/bean/Event.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/com/tvarkarastis/bean/EventLister.class" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/com/tvarkarastis/bean/EventLister.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/com/tvarkarastis/bean/LoginBean.class" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/com/tvarkarastis/bean/LoginBean.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/com/tvarkarastis/bean/LoginDao.class" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/com/tvarkarastis/bean/LoginDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/com/tvarkarastis/bean/Provider.class" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/com/tvarkarastis/bean/Provider.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/com/tvarkarastis/bean/RegisterDao.class" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/com/tvarkarastis/bean/RegisterDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/com/tvarkarastis/bean/User.class" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/com/tvarkarastis/bean/User.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/com/tvarkarastis/config/RootConfig.class" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/com/tvarkarastis/config/RootConfig.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/com/tvarkarastis/config/WebConfig.class" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/com/tvarkarastis/config/WebConfig.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/com/tvarkarastis/config/WebInit.class" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/com/tvarkarastis/config/WebInit.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/com/tvarkarastis/controller/HomeController.class" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/com/tvarkarastis/controller/HomeController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tvarkarastis++.iml" afterPath="$PROJECT_DIR$/Tvarkarastis++.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tvarkarastis/bean/Event.java" afterPath="$PROJECT_DIR$/src/main/java/com/tvarkarastis/bean/Event.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tvarkarastis/bean/ConnectionProvider.java" afterPath="$PROJECT_DIR$/src/main/java/com/tvarkarastis/bean/ConnectionProvider.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tvarkarastis/bean/EventLister.java" afterPath="$PROJECT_DIR$/src/main/java/com/tvarkarastis/bean/EventLister.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tvarkarastis/bean/LoginDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/tvarkarastis/bean/LoginDao.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tvarkarastis/bean/RegisterDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/tvarkarastis/bean/RegisterDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tvarkarastis/config/RootConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/tvarkarastis/config/RootConfig.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -106,10 +105,10 @@
       <file leaf-file-name="RegisterDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tvarkarastis/bean/RegisterDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="57" lean-forward="false" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
+            <state relative-caret-position="136">
+              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding>
-                <marker date="1493013959518" expanded="true" signature="392:429" ph="insert into user... " />
+                <marker date="1493017020585" expanded="true" signature="274:311" ph="insert into user... " />
               </folding>
             </state>
           </provider>
@@ -135,16 +134,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="publicEvents.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/publicEvents.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-68">
-              <caret line="14" column="12" lean-forward="false" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Event.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tvarkarastis/bean/Event.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -163,39 +152,48 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConnectionProvider.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ConnectionProvider.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tvarkarastis/bean/ConnectionProvider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+            <state relative-caret-position="20">
+              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#314#315#0" expanded="false" />
-                <element signature="e#350#351#0" expanded="false" />
-                <element signature="e#734#735#0" expanded="false" />
-                <element signature="e#760#761#0" expanded="false" />
+                <element signature="e#314#315#0" expanded="true" />
+                <element signature="e#350#351#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EventLister.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="EventLister.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tvarkarastis/bean/EventLister.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="-228">
+              <caret line="77" column="13" lean-forward="false" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#297#304#0" expanded="true" />
-                <marker date="1493015552781" expanded="true" signature="557:596" ph="select FIRST... " />
-                <marker date="1493015552781" expanded="true" signature="807:842" ph="select * fro... events" />
-                <marker date="1493015552781" expanded="true" signature="1948:1987" ph="select id fr... users" />
-                <marker date="1493015552781" expanded="true" signature="2199:2239" ph="select * fro... attends" />
-                <marker date="1493015552781" expanded="true" signature="2513:2546" ph="select * fro... events" />
-                <marker date="1493015552781" expanded="true" signature="3647:3686" ph="select id fr... users" />
-                <marker date="1493015552781" expanded="true" signature="3897:3924" ph="select * fro... events" />
-                <marker date="1493015552781" expanded="true" signature="3897:3937" ph="select * fro... events" />
-                <marker date="1493015552781" expanded="true" signature="3897:3954" ph="select * fro... events" />
+                <marker date="1493017020288" expanded="true" signature="440:479" ph="select FIRST... " />
+                <marker date="1493017020288" expanded="true" signature="690:725" ph="select * fro... events" />
+                <marker date="1493017020288" expanded="true" signature="1713:1752" ph="select id fr... users" />
+                <marker date="1493017020288" expanded="true" signature="1964:2004" ph="select * fro... attends" />
+                <marker date="1493017020288" expanded="true" signature="2278:2311" ph="select * fro... events" />
+                <marker date="1493017020288" expanded="true" signature="3294:3333" ph="select id fr... users" />
+                <marker date="1493017020288" expanded="true" signature="3544:3571" ph="select * fro... events" />
+                <marker date="1493017020288" expanded="true" signature="3544:3584" ph="select * fro... events" />
+                <marker date="1493017020288" expanded="true" signature="3544:3601" ph="select * fro... events" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RootConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tvarkarastis/config/RootConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="16" column="50" lean-forward="false" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -204,9 +202,12 @@
       <file leaf-file-name="LoginBean.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tvarkarastis/bean/LoginBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
+            <state relative-caret-position="187">
               <caret line="17" column="27" lean-forward="false" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-              <folding />
+              <folding>
+                <element signature="e#362#363#0" expanded="true" />
+                <element signature="e#402#403#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -214,10 +215,10 @@
       <file leaf-file-name="LoginDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tvarkarastis/bean/LoginDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="16" column="25" lean-forward="false" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+            <state relative-caret-position="119">
+              <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
               <folding>
-                <marker date="1492880833134" expanded="true" signature="465:516" ph="select * fro... user" />
+                <marker date="1493017020460" expanded="true" signature="347:398" ph="select * fro... user" />
               </folding>
             </state>
           </provider>
@@ -261,6 +262,11 @@
     </dirStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="audriuska12 &lt;audriuska4812@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GradleLocalSettings">
@@ -273,7 +279,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/webapp/test.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tvarkarastis/config/RootConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tvarkarastis/config/WebConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tvarkarastis/config/WebInit.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/home.jsp" />
@@ -287,18 +292,19 @@
         <option value="$PROJECT_DIR$/src/main/webapp/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/register.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/tvarkarastis/bean/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tvarkarastis/bean/ConnectionProvider.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tvarkarastis/bean/LoginBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tvarkarastis/bean/Provider.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/header.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tvarkarastis/bean/LoginDao.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/attends.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/hostedBy.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/profile.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/publicEvents.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tvarkarastis/bean/RegisterDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tvarkarastis/bean/Event.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tvarkarastis/bean/ConnectionProvider.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tvarkarastis/config/RootConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tvarkarastis/bean/EventLister.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tvarkarastis/bean/LoginDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tvarkarastis/bean/RegisterDao.java" />
       </list>
     </option>
   </component>
@@ -481,6 +487,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="tvarkarastis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tvarkarastis++" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tvarkarastis++" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tvarkarastis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1038,12 +1074,20 @@
       <workItem from="1492875539837" duration="5799000" />
       <workItem from="1492935253377" duration="1887000" />
       <workItem from="1492937977405" duration="962000" />
-      <workItem from="1493012400697" duration="3135000" />
+      <workItem from="1493012400697" duration="4456000" />
     </task>
+    <task id="LOCAL-00001" summary="DateTime cleanup">
+      <created>1493015805305</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1493015805305</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30362000" />
+    <option name="totallyTimeSpent" value="31683000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1093,9 +1137,13 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="DateTime cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="DateTime cleanup" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="25" />
+      <option name="time" value="29" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
@@ -1152,13 +1200,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tvarkarastis/config/RootConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -1382,53 +1423,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tvarkarastis/bean/ConnectionProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#314#315#0" expanded="false" />
-            <element signature="e#350#351#0" expanded="false" />
-            <element signature="e#734#735#0" expanded="false" />
-            <element signature="e#760#761#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tvarkarastis/bean/LoginBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="27" lean-forward="false" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tvarkarastis/bean/Provider.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="43" lean-forward="false" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tvarkarastis/bean/LoginDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="16" column="25" lean-forward="false" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-          <folding>
-            <marker date="1492880833134" expanded="true" signature="465:516" ph="select * fro... user" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tvarkarastis/bean/RegisterDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="57" lean-forward="false" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
-          <folding>
-            <marker date="1493013959518" expanded="true" signature="392:429" ph="insert into user... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1464,22 +1463,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tvarkarastis/config/RootConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="16" column="50" lean-forward="false" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tvarkarastis/bean/EventLister.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="-228">
+          <caret line="77" column="13" lean-forward="false" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#297#304#0" expanded="true" />
-            <marker date="1493015552781" expanded="true" signature="557:596" ph="select FIRST... " />
-            <marker date="1493015552781" expanded="true" signature="807:842" ph="select * fro... events" />
-            <marker date="1493015552781" expanded="true" signature="1948:1987" ph="select id fr... users" />
-            <marker date="1493015552781" expanded="true" signature="2199:2239" ph="select * fro... attends" />
-            <marker date="1493015552781" expanded="true" signature="2513:2546" ph="select * fro... events" />
-            <marker date="1493015552781" expanded="true" signature="3647:3686" ph="select id fr... users" />
-            <marker date="1493015552781" expanded="true" signature="3897:3924" ph="select * fro... events" />
-            <marker date="1493015552781" expanded="true" signature="3897:3937" ph="select * fro... events" />
-            <marker date="1493015552781" expanded="true" signature="3897:3954" ph="select * fro... events" />
+            <marker date="1493017020288" expanded="true" signature="440:479" ph="select FIRST... " />
+            <marker date="1493017020288" expanded="true" signature="690:725" ph="select * fro... events" />
+            <marker date="1493017020288" expanded="true" signature="1713:1752" ph="select id fr... users" />
+            <marker date="1493017020288" expanded="true" signature="1964:2004" ph="select * fro... attends" />
+            <marker date="1493017020288" expanded="true" signature="2278:2311" ph="select * fro... events" />
+            <marker date="1493017020288" expanded="true" signature="3294:3333" ph="select id fr... users" />
+            <marker date="1493017020288" expanded="true" signature="3544:3571" ph="select * fro... events" />
+            <marker date="1493017020288" expanded="true" signature="3544:3584" ph="select * fro... events" />
+            <marker date="1493017020288" expanded="true" signature="3544:3601" ph="select * fro... events" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tvarkarastis/bean/LoginBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="17" column="27" lean-forward="false" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+          <folding>
+            <element signature="e#362#363#0" expanded="true" />
+            <element signature="e#402#403#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tvarkarastis/bean/LoginDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+          <folding>
+            <marker date="1493017020460" expanded="true" signature="347:398" ph="select * fro... user" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tvarkarastis/bean/RegisterDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <marker date="1493017020585" expanded="true" signature="274:311" ph="insert into user... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tvarkarastis/bean/ConnectionProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="e#314#315#0" expanded="true" />
+            <element signature="e#350#351#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,5 +1,7 @@
 package com.tvarkarastis.config;
 
+import com.tvarkarastis.bean.ConnectionProvider;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
@@ -8,4 +10,11 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class RootConfig {
+
+    @Bean
+    public boolean connectionProvider() {
+        ConnectionProvider.Initialize();
+        return ConnectionProvider.isInitialized();
+    }
+
 }

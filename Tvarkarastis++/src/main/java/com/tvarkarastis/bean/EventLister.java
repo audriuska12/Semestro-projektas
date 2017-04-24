@@ -12,9 +12,7 @@ public class EventLister {
     public static ArrayList<Event> eventsOfUser(String username) {
         ArrayList<Event> events = new ArrayList<Event>();
         try {
-            if (!ConnectionProvider.isInitialized()) {
-                ConnectionProvider.Initialize();
-            }
+
             Connection con = ConnectionProvider.getCon();
             PreparedStatement user = con.prepareStatement("select id from users where username = ?");
             user.setString(1, username);
@@ -44,9 +42,6 @@ public class EventLister {
     public static ArrayList<Event> eventsUserAttends(String username) {
         ArrayList<Event> events = new ArrayList<Event>();
         try {
-            if (!ConnectionProvider.isInitialized()) {
-                ConnectionProvider.Initialize();
-            }
             Connection con = ConnectionProvider.getCon();
             PreparedStatement user = con.prepareStatement("select id from users where username = ?");
             user.setString(1, username);
@@ -81,9 +76,6 @@ public class EventLister {
     public static ArrayList<Event> publicEvents(String username) {
         ArrayList<Event> events = new ArrayList<Event>();
         try {
-            if (!ConnectionProvider.isInitialized()) {
-                ConnectionProvider.Initialize();
-            }
             Connection con = ConnectionProvider.getCon();
             PreparedStatement user = con.prepareStatement("select id from users where username = ?");
             user.setString(1, username);

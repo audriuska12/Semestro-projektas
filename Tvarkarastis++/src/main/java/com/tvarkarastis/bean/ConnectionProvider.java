@@ -17,6 +17,9 @@ public class ConnectionProvider {
     }
 
     public static void Initialize() {
+        if (isInitialized) {
+            return;
+        }
         try {
             Class.forName(DRIVER).newInstance();
             con = DriverManager.getConnection(CONNECTION_URL, USERNAME, PASSWORD);

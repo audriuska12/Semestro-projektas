@@ -9,9 +9,6 @@ public class LoginDao {
     public static boolean validate(LoginBean bean){
         boolean status=false;
         try{
-            if (!ConnectionProvider.isInitialized()) {
-                ConnectionProvider.Initialize();
-            }
             Connection con=ConnectionProvider.getCon();
 
             PreparedStatement ps=con.prepareStatement(
