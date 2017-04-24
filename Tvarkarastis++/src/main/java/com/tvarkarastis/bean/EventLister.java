@@ -1,6 +1,7 @@
 package com.tvarkarastis.bean;
 
 import java.sql.*;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 
 /**
@@ -28,13 +29,14 @@ public class EventLister {
                 event.setId(rs.getInt("id"));
                 event.setName(rs.getString("name"));
                 event.setLocation(rs.getString("location"));
-                event.setStart(rs.getDate("start"));
-                event.setEnd(rs.getDate("end"));
+                event.setStart(rs.getTimestamp("start").toLocalDateTime());
+                event.setEnd((rs.getTimestamp("end").toLocalDateTime()));
                 event.setPublic(rs.getBoolean("public"));
                 event.setHost(id);
                 events.add(event);
             }
         } catch (Exception e) {
+            String err = e.toString();
         }
         return events;
     }
@@ -65,8 +67,8 @@ public class EventLister {
                     event.setId(rs.getInt("id"));
                     event.setName(rs.getString("name"));
                     event.setLocation(rs.getString("location"));
-                    event.setStart(rs.getDate("start"));
-                    event.setEnd(rs.getDate("end"));
+                    event.setStart(rs.getTimestamp("start").toLocalDateTime());
+                    event.setEnd((rs.getTimestamp("end").toLocalDateTime()));
                     event.setHost(id);
                     events.add(event);
                 }
@@ -96,8 +98,8 @@ public class EventLister {
                 event.setId(rs.getInt("id"));
                 event.setName(rs.getString("name"));
                 event.setLocation(rs.getString("location"));
-                event.setStart(rs.getDate("start"));
-                event.setEnd(rs.getDate("end"));
+                event.setStart(rs.getTimestamp("start").toLocalDateTime());
+                event.setEnd((rs.getTimestamp("end").toLocalDateTime()));
                 event.setPublic(rs.getBoolean("public"));
                 event.setHost(rs.getInt("host"));
                 events.add(event);

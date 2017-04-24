@@ -1,6 +1,7 @@
 package com.tvarkarastis.bean;
 
 import java.sql.Date;
+import java.time.LocalDateTime;
 
 /**
  * Created by audri on 2017-04-22.
@@ -10,7 +11,7 @@ public class Event {
     private int host;
     private boolean isPublic;
     private String name, location;
-    private Date start, end;
+    private LocalDateTime start, end;
 
     public Event() {
     }
@@ -47,19 +48,19 @@ public class Event {
         this.id = id;
     }
 
-    public Date getStart() {
+    public LocalDateTime getStart() {
         return start;
     }
 
-    public void setStart(Date start) {
+    public void setStart(LocalDateTime start) {
         this.start = start;
     }
 
-    public Date getEnd() {
+    public LocalDateTime getEnd() {
         return end;
     }
 
-    public void setEnd(Date end) {
+    public void setEnd(LocalDateTime end) {
         this.end = end;
     }
 
