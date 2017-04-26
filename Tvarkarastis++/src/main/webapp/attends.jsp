@@ -1,6 +1,6 @@
 <%@ page import="com.tvarkarastis.bean.Event" %>
 <%@ page import="java.util.ArrayList" %>
-<%@ page import="com.tvarkarastis.bean.EventLister" %><%--
+<%@ page import="com.tvarkarastis.bean.EventManagerDao" %><%--
   Created by IntelliJ IDEA.
   User: audri
   Date: 2017-04-23
@@ -18,7 +18,7 @@ Your attended events:
         <th>Visibility</th>
     </tr>
     <%
-        ArrayList<Event> eventsAttended = EventLister.eventsUserAttends(session.getAttribute("username").toString());
+        ArrayList<Event> eventsAttended = EventManagerDao.eventsUserAttends(session.getAttribute("username").toString());
         for (Event e : eventsAttended) {
             out.println("<tr>");
             out.println("<td>" + e.getName() + "</td>");

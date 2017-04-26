@@ -9,28 +9,14 @@ import java.sql.*;
 import static com.tvarkarastis.bean.Provider.*;
 
 public class ConnectionProvider {
-    private static Connection con = null;
-    private static boolean isInitialized = false;
 
-    public static boolean isInitialized() {
-        return isInitialized;
-    }
-
-    public static void Initialize() {
-        if (isInitialized) {
-            return;
-        }
+    public static Connection getCon() {
+        Connection con = null;
         try {
             Class.forName(DRIVER).newInstance();
             con = DriverManager.getConnection(CONNECTION_URL, USERNAME, PASSWORD);
-            isInitialized = true;
         } catch (Exception e) {
-            String err = e.toString();
-            System.out.println(err);
         }
-    }
-
-    public static Connection getCon() {
         return con;
     }
 

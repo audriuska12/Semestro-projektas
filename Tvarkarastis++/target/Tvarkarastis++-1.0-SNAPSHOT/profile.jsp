@@ -1,6 +1,6 @@
 <%@ page import="com.tvarkarastis.bean.Event" %>
 <%@ page import="java.util.ArrayList" %>
-<%@ page import="com.tvarkarastis.bean.EventLister" %><%--
+<%@ page import="com.tvarkarastis.bean.EventManagerDao" %><%--
   Created by IntelliJ IDEA.
   User: audri
   Date: 2017-04-19
