@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e3007fd-a1b6-47f1-b08f-d6fbf2ff3ec0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/MethodTester.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/com/tvarkarastis/bean/Event.class" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/com/tvarkarastis/bean/Event.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/com/tvarkarastis/bean/LoginDao.class" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/com/tvarkarastis/bean/LoginDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/com/tvarkarastis/bean/RegisterDao.class" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/com/tvarkarastis/bean/RegisterDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/com/tvarkarastis/config/RootConfig.class" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/com/tvarkarastis/config/RootConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/tvarkarastis/bean/Event.class" afterPath="$PROJECT_DIR$/target/classes/com/tvarkarastis/bean/Event.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/tvarkarastis/bean/LoginDao.class" afterPath="$PROJECT_DIR$/target/classes/com/tvarkarastis/bean/LoginDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/tvarkarastis/bean/RegisterDao.class" afterPath="$PROJECT_DIR$/target/classes/com/tvarkarastis/bean/RegisterDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/tvarkarastis/config/RootConfig.class" afterPath="$PROJECT_DIR$/target/classes/com/tvarkarastis/config/RootConfig.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tvarkarastis/bean/Event.java" afterPath="$PROJECT_DIR$/src/main/java/com/tvarkarastis/bean/Event.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tvarkarastis/bean/EventManagerDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/tvarkarastis/bean/EventManagerDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tvarkarastis/bean/RegisterDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/tvarkarastis/bean/RegisterDao.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -1064,7 +1052,7 @@
       <workItem from="1493012400697" duration="4553000" />
       <workItem from="1493237233847" duration="93000" />
       <workItem from="1493237642152" duration="2496000" />
-      <workItem from="1493273115174" duration="5732000" />
+      <workItem from="1493273115174" duration="5838000" />
     </task>
     <task id="LOCAL-00001" summary="DateTime cleanup">
       <created>1493015805305</created>
@@ -1087,15 +1075,21 @@
       <option name="project" value="LOCAL" />
       <updated>1493240091432</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Further cleanup, event creator method, MethodTester page">
+      <created>1493278888975</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1493278888975</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40101000" />
+    <option name="totallyTimeSpent" value="40207000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1111,7 +1105,7 @@
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39934534" sideWeight="0.49092284" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39934534" sideWeight="0.49092284" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1142,10 +1136,12 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="DateTime cleanup" />
     <MESSAGE value="ConnectionManager cleanup" />
     <MESSAGE value="Connection opening/closing logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="Connection opening/closing logic" />
+    <MESSAGE value="Further cleanup, event creator method, MethodTester page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Further cleanup, event creator method, MethodTester page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
