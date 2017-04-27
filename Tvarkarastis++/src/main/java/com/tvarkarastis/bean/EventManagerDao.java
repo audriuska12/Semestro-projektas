@@ -1,6 +1,7 @@
 package com.tvarkarastis.bean;
 
 import java.sql.*;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 
@@ -8,6 +9,39 @@ import java.util.ArrayList;
  * Created by audri on 2017-04-22.
  */
 public class EventManagerDao {
+
+    public static boolean InsertEvent(Event event) {
+        Connection con = null;
+        PreparedStatement ps = null;
+        boolean success = false;
+        try {
+            con = ConnectionProvider.getCon();
+            if (con != null) {
+                ps = con.prepareStatement("insert into events (`id`, `name`, `location`, `start`, `end`, `public`, `host`) values (default,?,?,?,?,?,?)");
+                ps.setString(1, event.getName());
+                ps.setString(2, event.getLocation());
+                ps.setString(3, event.getStart().toString());
+                ps.setString(4, event.getEnd().toString());
+                if (event.isPublic()) {
+                    ps.setString(5, "1");
+                } else ps.setString(5, "0");
+                ps.setString(6, String.valueOf(event.getHost()));
+                if(ps.executeUpdate() > 0)
+                success = true;
+            }
+        } catch (Exception e) {
+            String err = e.toString();
+
+        } finally {
+            try {
+                ps.close();
+                con.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        return success;
+    }
 
     public static ArrayList<Event> eventsOfUser(String username) {
         ArrayList<Event> events = new ArrayList<Event>();
@@ -23,7 +57,6 @@ public class EventManagerDao {
                 rs = ps.executeQuery();
                 while (rs.next()) {
                     Event event = new Event();
-                    event.setId(rs.getInt("id"));
                     event.setName(rs.getString("name"));
                     event.setLocation(rs.getString("location"));
                     event.setStart(rs.getTimestamp("start").toLocalDateTime());
@@ -64,7 +97,6 @@ public class EventManagerDao {
                     rs = ps.executeQuery();
                     while (rs.next()) {
                         Event event = new Event();
-                        event.setId(rs.getInt("id"));
                         event.setName(rs.getString("name"));
                         event.setLocation(rs.getString("location"));
                         event.setStart(rs.getTimestamp("start").toLocalDateTime());
@@ -100,7 +132,6 @@ public class EventManagerDao {
                 rs = ps.executeQuery();
                 while (rs.next()) {
                     Event event = new Event();
-                    event.setId(rs.getInt("id"));
                     event.setName(rs.getString("name"));
                     event.setLocation(rs.getString("location"));
                     event.setStart(rs.getTimestamp("start").toLocalDateTime());

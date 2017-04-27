@@ -7,7 +7,6 @@ import java.time.LocalDateTime;
  * Created by audri on 2017-04-22.
  */
 public class Event {
-    private int id;
     private int host;
     private boolean isPublic;
     private String name, location;
@@ -38,14 +37,6 @@ public class Event {
 
     public void setLocation(String location) {
         this.location = location;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public LocalDateTime getStart() {
