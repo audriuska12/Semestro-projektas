@@ -10,7 +10,8 @@ import java.util.ArrayList;
  */
 public class EventManagerDao {
 
-    public static boolean InsertEvent(Event event) {
+    public static int InsertEvent(Event event) { //grazinimo reiksmes: -2: SQL klaida; -1: neteisingi duomenys; 1: teisinga
+        if (!event.Validate()) return -1;
         Connection con = null;
         PreparedStatement ps = null;
         boolean success = false;
@@ -26,18 +27,41 @@ public class EventManagerDao {
                     ps.setString(5, "1");
                 } else ps.setString(5, "0");
                 ps.setString(6, String.valueOf(event.getHost()));
-                if(ps.executeUpdate() > 0)
-                success = true;
+                if (ps.executeUpdate() > 0)
+                    success = true;
             }
         } catch (Exception e) {
-            String err = e.toString();
-
         } finally {
             try {
                 ps.close();
                 con.close();
             } catch (SQLException e) {
-                e.printStackTrace();
+            }
+        }
+        if (success) return 1;
+        else return -2;
+    }
+
+    public static boolean removeEvent(int id) {
+        Connection con = null;
+        PreparedStatement ps = null;
+        boolean success = false;
+        try {
+            con = ConnectionProvider.getCon();
+            if (con != null) {
+                ps = con.prepareStatement("DELETE FROM events WHERE id=?");
+                ps.setString(1, String.valueOf(id));
+                if (ps.executeUpdate() > 0) {
+                    success = true;
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                ps.close();
+                con.close();
+            } catch (SQLException e) {
             }
         }
         return success;
@@ -56,14 +80,7 @@ public class EventManagerDao {
                 ps.setString(1, String.valueOf(id));
                 rs = ps.executeQuery();
                 while (rs.next()) {
-                    Event event = new Event();
-                    event.setName(rs.getString("name"));
-                    event.setLocation(rs.getString("location"));
-                    event.setStart(rs.getTimestamp("start").toLocalDateTime());
-                    event.setEnd((rs.getTimestamp("end").toLocalDateTime()));
-                    event.setPublic(rs.getBoolean("public"));
-                    event.setHost(id);
-                    events.add(event);
+                    events.add(eventFromRS(rs));
                 }
             }
         } catch (Exception e) {
@@ -96,13 +113,7 @@ public class EventManagerDao {
                     ps.setString(1, String.valueOf(i));
                     rs = ps.executeQuery();
                     while (rs.next()) {
-                        Event event = new Event();
-                        event.setName(rs.getString("name"));
-                        event.setLocation(rs.getString("location"));
-                        event.setStart(rs.getTimestamp("start").toLocalDateTime());
-                        event.setEnd((rs.getTimestamp("end").toLocalDateTime()));
-                        event.setHost(id);
-                        events.add(event);
+                        events.add(eventFromRS(rs));
                     }
                 }
             }
@@ -131,14 +142,7 @@ public class EventManagerDao {
                 ps.setString(1, String.valueOf(id));
                 rs = ps.executeQuery();
                 while (rs.next()) {
-                    Event event = new Event();
-                    event.setName(rs.getString("name"));
-                    event.setLocation(rs.getString("location"));
-                    event.setStart(rs.getTimestamp("start").toLocalDateTime());
-                    event.setEnd((rs.getTimestamp("end").toLocalDateTime()));
-                    event.setPublic(rs.getBoolean("public"));
-                    event.setHost(rs.getInt("host"));
-                    events.add(event);
+                    events.add(eventFromRS(rs));
                 }
             }
         } catch (Exception e) {
@@ -151,5 +155,111 @@ public class EventManagerDao {
             }
         }
         return events;
+    }
+
+    public static ArrayList<Event> invitedEvents(String username){
+        ArrayList<Event> events = new ArrayList<Event>();
+        Connection con = null;
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+        try {
+            con = ConnectionProvider.getCon();
+            if (con != null) {
+                int id = UserManagerDao.getUserId(username);
+                ps = con.prepareStatement("select * from events, invitations where `invitations`.`event`=`events`.`id` AND `invitations`.`user`=? AND events.id NOT IN (SELECT event as id FROM attends WHERE user=?)");
+                ps.setString(1, String.valueOf(id));
+                ps.setString(2, String.valueOf(id));
+                rs = ps.executeQuery();
+                while (rs.next()) {
+                    events.add(eventFromRS(rs));
+                }
+            }
+        } catch (Exception e) {
+        } finally {
+            try {
+                ps.close();
+                con.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        return events;
+
+    }
+
+    public static ArrayList<Event> getEvents(String username, boolean host, String name, String location, LocalDateTime dateStart, LocalDateTime dateEnd){ //username ir host reikalausiu (host true - paims tik hostinamus ivykius, false - ims visus)
+        ArrayList<Event> events = new ArrayList<Event>();
+        Connection con = null;
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+        try {
+            con = ConnectionProvider.getCon();
+            if (con != null) {
+                int id = UserManagerDao.getUserId(username);
+                String query = "SELECT DISTINCT id, name, location, start, end, `public`, host FROM events";
+                if(host){
+                    query += " WHERE host=?";
+                } else {
+                    query += ", attends WHERE (host=? OR (user=? && event=id))";
+                }
+                if(name != null & !name.isEmpty()){
+                    query +=" && name=?";
+                }
+                if(location != null && !location.isEmpty()){
+                    query +=" && location=?";
+                }
+                if(dateStart != null){
+                    query +=" && start >= ?";
+                }
+                if(dateEnd !=null){
+                    query +=" && end <= ?";
+                }
+                int argc = 0;
+                ps=con.prepareStatement(query);
+                if(host){
+                    ps.setString(++argc, String.valueOf(id));
+                } else {
+                    ps.setString(++argc, String.valueOf(id));
+                    ps.setString(++argc, String.valueOf(id));
+                }
+                if(name != null & !name.isEmpty()){
+                    ps.setString(++argc, name);
+                }
+                if(location != null && !location.isEmpty()){
+                    ps.setString(++argc, location);
+                }
+                if(dateStart != null){
+                    ps.setString(++argc, String.valueOf(dateStart));
+                }
+                if(dateEnd !=null){
+                    ps.setString(++argc, String.valueOf(dateEnd));
+                }
+                rs = ps.executeQuery();
+                while (rs.next()) {
+                    events.add(eventFromRS(rs));
+                }
+            }
+        } catch (Exception e){
+            e.printStackTrace();
+        } finally{
+            try {
+                ps.close();
+                con.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        return events;
+    }
+
+    private static Event eventFromRS(ResultSet rs) throws SQLException {
+        Event event = new Event();
+        event.setName(rs.getString("name"));
+        event.setLocation(rs.getString("location"));
+        event.setStart(rs.getTimestamp("start").toLocalDateTime());
+        event.setEnd((rs.getTimestamp("end").toLocalDateTime()));
+        event.setPublic(rs.getBoolean("public"));
+        event.setHost(rs.getInt("host"));
+        return event;
     }
 }

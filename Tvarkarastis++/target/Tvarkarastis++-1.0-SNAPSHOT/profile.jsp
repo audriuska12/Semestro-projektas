@@ -15,6 +15,7 @@
 </head>
 <%@include file="hostedBy.jsp"%>
 <%@include file="attends.jsp"%>
+<%@include file="invitations.jsp"%>
 <%@include file="publicEvents.jsp"%>
 </table>
 <body>
