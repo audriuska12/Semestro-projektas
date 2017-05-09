@@ -1,8 +1,11 @@
-package com.tvarkarastis.bean;
+package com.tvarkarastis.dao;
 
 /**
  * Created by audri on 2017-04-16.
  */
+
+import com.tvarkarastis.entity.ConnectionProvider;
+import com.tvarkarastis.entity.LoginBean;
 
 import java.sql.*;
 

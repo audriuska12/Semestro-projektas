@@ -1,7 +1,5 @@
 package com.tvarkarastis.config;
 
-import com.tvarkarastis.bean.ConnectionProvider;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**

@@ -1,4 +1,4 @@
-package com.tvarkarastis.bean;
+package com.tvarkarastis.entity;
 
 public class LoginBean {
     private String username, password;

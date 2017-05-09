@@ -1,6 +1,5 @@
-package com.tvarkarastis.bean;
+package com.tvarkarastis.entity;
 
-import java.sql.Date;
 import java.time.LocalDateTime;
 
 /**
@@ -19,8 +18,7 @@ public class Event {
         if(host < 1) return false;
         if (name == null || name.isEmpty() || name.length() <5 ) return false;
         if(location == null || location.isEmpty() || location.length() <5 ) return false;
-        if(end.compareTo(start) < 0) return false;
-        return true;
+        return end.compareTo(start) >= 0;
     }
 
     public int getHost() {

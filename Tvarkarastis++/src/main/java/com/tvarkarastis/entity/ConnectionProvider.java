@@ -1,4 +1,4 @@
-package com.tvarkarastis.bean;
+package com.tvarkarastis.entity;
 
 /**
  * Created by audri on 2017-04-16.
@@ -6,9 +6,12 @@ package com.tvarkarastis.bean;
 
 import java.sql.*;
 
-import static com.tvarkarastis.bean.Provider.*;
-
 public class ConnectionProvider {
+
+    static String DRIVER = "com.mysql.jdbc.Driver";
+    static String CONNECTION_URL = "jdbc:mysql://localhost:3306/tvarkarastis";
+    static String USERNAME = "java";
+    static String PASSWORD = "javaadmin";
 
     public static Connection getCon() {
         Connection con = null;

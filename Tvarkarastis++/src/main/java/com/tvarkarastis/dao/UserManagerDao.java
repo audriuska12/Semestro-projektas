@@ -1,4 +1,7 @@
-package com.tvarkarastis.bean;
+package com.tvarkarastis.dao;
+
+import com.tvarkarastis.entity.ConnectionProvider;
+import com.tvarkarastis.entity.User;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -25,6 +28,7 @@ public class UserManagerDao {
         } finally {
             try {
                 user.close();
+                con.close();
             } catch (SQLException ex) {
             }
         }
@@ -133,7 +137,7 @@ public class UserManagerDao {
     }
 
     public static ArrayList<User> Followed(int id){
-        ArrayList<User> users = new ArrayList();
+        ArrayList users = new ArrayList();
         Connection con = ConnectionProvider.getCon();
         PreparedStatement ps = null;
         try {
@@ -147,6 +151,7 @@ public class UserManagerDao {
         } finally {
             try {
                 ps.close();
+                con.close();
             } catch (SQLException ex) {
             }
         }
@@ -154,7 +159,7 @@ public class UserManagerDao {
     }
 
     public static ArrayList<User> Followers(int id){
-        ArrayList<User> users = new ArrayList();
+        ArrayList users = new ArrayList();
         Connection con = ConnectionProvider.getCon();
         PreparedStatement ps = null;
         try {
@@ -168,6 +173,7 @@ public class UserManagerDao {
         } finally {
             try {
                 ps.close();
+                con.close();
             } catch (SQLException ex) {
             }
         }
@@ -175,7 +181,7 @@ public class UserManagerDao {
     }
 
     public static ArrayList<User> Friends(int id){
-        ArrayList<User> users = new ArrayList();
+        ArrayList users = new ArrayList();
         Connection con = ConnectionProvider.getCon();
         PreparedStatement ps = null;
         try {
@@ -189,6 +195,7 @@ public class UserManagerDao {
         } finally {
             try {
                 ps.close();
+                con.close();
             } catch (SQLException ex) {
             }
         }
@@ -220,6 +227,7 @@ public class UserManagerDao {
         User user = new User();
         user.setId(rs.getInt("id"));
         user.setUsername(rs.getString("username"));
+        user.setEmail(rs.getString("email"));
         return user;
     }
 }

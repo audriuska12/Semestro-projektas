@@ -1,11 +1,11 @@
-<%@ page import="com.tvarkarastis.bean.EventManagerDao" %>
+<%@ page import="com.tvarkarastis.dao.EventManagerDao" %>
 <%@ page import="java.time.LocalDateTime" %>
-<%@ page import="com.tvarkarastis.bean.Event" %>
+<%@ page import="com.tvarkarastis.entity.Event" %>
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="java.sql.Time" %>
-<%@ page import="com.tvarkarastis.bean.UserManagerDao" %>
+<%@ page import="com.tvarkarastis.dao.UserManagerDao" %>
 <%@ page import="java.sql.Array" %>
-<%@ page import="com.tvarkarastis.bean.User" %><%--
+<%@ page import="com.tvarkarastis.entity.User" %><%--
   Created by IntelliJ IDEA.
   User: audri
   Date: 2017-04-27

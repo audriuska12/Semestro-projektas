@@ -1,7 +1,9 @@
-package com.tvarkarastis.bean;
+package com.tvarkarastis.dao;
+
+import com.tvarkarastis.entity.ConnectionProvider;
+import com.tvarkarastis.entity.Event;
 
 import java.sql.*;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 
