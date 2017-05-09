@@ -6,6 +6,7 @@ import com.tvarkarastis.entity.Event;
 import java.sql.*;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by audri on 2017-04-22.
@@ -37,7 +38,7 @@ public class EventManagerDao {
             try {
                 ps.close();
                 con.close();
-            } catch (SQLException e) {
+            } catch (Exception e) {
             }
         }
         if (success) return 1;
@@ -57,19 +58,19 @@ public class EventManagerDao {
                     success = true;
                 }
             }
-        } catch (SQLException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         } finally {
             try {
                 ps.close();
                 con.close();
-            } catch (SQLException e) {
+            } catch (Exception e) {
             }
         }
         return success;
     }
 
-    public static ArrayList<Event> eventsOfUser(String username) {
+    public static List<Event> eventsOfUser(String username) {
         ArrayList<Event> events = new ArrayList<Event>();
         Connection con = null;
         PreparedStatement ps = null;
@@ -90,13 +91,13 @@ public class EventManagerDao {
             try {
                 ps.close();
                 con.close();
-            } catch (SQLException e) {
+            } catch (Exception e) {
             }
         }
         return events;
     }
 
-    public static ArrayList<Event> eventsUserAttends(String username) {
+    public static List<Event> eventsUserAttends(String username) {
         ArrayList<Event> events = new ArrayList<Event>();
         Connection con = null;
         PreparedStatement ps = null;
@@ -124,14 +125,14 @@ public class EventManagerDao {
             try {
                 ps.close();
                 con.close();
-            } catch (SQLException e) {
+            } catch (Exception e) {
                 e.printStackTrace();
             }
         }
         return events;
     }
 
-    public static ArrayList<Event> publicEvents(String username) {
+    public static List<Event> publicEvents(String username) {
         ArrayList<Event> events = new ArrayList<Event>();
         Connection con = null;
         PreparedStatement ps = null;
@@ -152,14 +153,14 @@ public class EventManagerDao {
             try {
                 ps.close();
                 con.close();
-            } catch (SQLException e) {
+            } catch (Exception e) {
                 e.printStackTrace();
             }
         }
         return events;
     }
 
-    public static ArrayList<Event> invitedEvents(String username){
+    public static List<Event> invitedEvents(String username){
         ArrayList<Event> events = new ArrayList<Event>();
         Connection con = null;
         PreparedStatement ps = null;
@@ -181,7 +182,7 @@ public class EventManagerDao {
             try {
                 ps.close();
                 con.close();
-            } catch (SQLException e) {
+            } catch (Exception e) {
                 e.printStackTrace();
             }
         }
@@ -189,7 +190,7 @@ public class EventManagerDao {
 
     }
 
-    public static ArrayList<Event> getEvents(String username, boolean host, String name, String location, LocalDateTime dateStart, LocalDateTime dateEnd){ //username ir host reikalausiu (host true - paims tik hostinamus ivykius, false - ims visus)
+    public static List<Event> getEvents(String username, boolean host, String name, String location, LocalDateTime dateStart, LocalDateTime dateEnd){ //username ir host reikalausiu (host true - paims tik hostinamus ivykius, false - ims visus)
         ArrayList<Event> events = new ArrayList<Event>();
         Connection con = null;
         PreparedStatement ps = null;
@@ -247,7 +248,7 @@ public class EventManagerDao {
             try {
                 ps.close();
                 con.close();
-            } catch (SQLException e) {
+            } catch (Exception e) {
                 e.printStackTrace();
             }
         }

@@ -31,7 +31,7 @@ public class LoginDao {
             try {
                 ps.close();
                 con.close();
-            } catch (SQLException e) {
+            } catch (Exception e) {
                 e.printStackTrace();
             }
         }

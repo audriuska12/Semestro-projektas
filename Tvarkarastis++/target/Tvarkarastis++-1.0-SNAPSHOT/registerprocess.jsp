@@ -5,8 +5,8 @@
   Time: 21:11
   To change this template use File | Settings | File Templates.
 --%>
-<%@page import="com.tvarkarastis.bean.RegisterDao"%>
-<jsp:useBean id="obj" class="com.tvarkarastis.bean.User"/>
+<%@page import="com.tvarkarastis.dao.RegisterDao"%>
+<jsp:useBean id="obj" class="com.tvarkarastis.entity.User"/>
 
 <jsp:setProperty property="*" name="obj"/>
 

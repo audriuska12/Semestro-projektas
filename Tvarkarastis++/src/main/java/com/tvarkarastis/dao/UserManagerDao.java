@@ -8,6 +8,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by audri on 2017-04-26.
@@ -29,10 +30,32 @@ public class UserManagerDao {
             try {
                 user.close();
                 con.close();
-            } catch (SQLException ex) {
+            } catch (Exception e) {
             }
         }
         return id;
+    }
+
+    public static User getUser(int id) {
+        Connection con = ConnectionProvider.getCon();
+        PreparedStatement ps = null;
+        User user = null;
+        try {
+            ps = con.prepareStatement("select * from users where id = ?");
+            ps.setString(1, String.valueOf(id));
+            ResultSet rs = ps.executeQuery();
+            if (rs.next()) {
+                user = userFromRS(rs);
+            }
+        } catch (Exception e) {
+        } finally {
+            try {
+                ps.close();
+                con.close();
+            } catch (Exception e) {
+            }
+        }
+        return user;
     }
 
     public static int Attend(int eventId, int userId) { //-1: nekviestas; -2: SQL klaida; -3: toks jau yra; 1: suveike
@@ -91,7 +114,7 @@ public class UserManagerDao {
     }
 
     public static int Follow(int thisId, int otherId) {// -3: pats su savim -2: SQL klaida (greiciausiai jau yra) -1: ner tokio userio 1: pavyko
-        if(thisId == otherId) return -3;
+        if (thisId == otherId) return -3;
         Connection con = ConnectionProvider.getCon();
         PreparedStatement ps = null;
         int success = 0;
@@ -114,7 +137,7 @@ public class UserManagerDao {
         return (success > 0 ? 1 : -1);
     }
 
-    public static boolean Unfollow(int thisId, int otherId){
+    public static boolean Unfollow(int thisId, int otherId) {
         Connection con = ConnectionProvider.getCon();
         PreparedStatement ps = null;
         int success = 0;
@@ -136,15 +159,15 @@ public class UserManagerDao {
         return success > 0;
     }
 
-    public static ArrayList<User> Followed(int id){
+    public static List<User> Followed(int id) {
         ArrayList users = new ArrayList();
         Connection con = ConnectionProvider.getCon();
         PreparedStatement ps = null;
         try {
             ps = con.prepareStatement("select * from users where id IN (SELECT other as id FROM follows WHERE this=?)");
-            ps.setString(1,String.valueOf(id));
+            ps.setString(1, String.valueOf(id));
             ResultSet rs = ps.executeQuery();
-            while(rs.next()){
+            while (rs.next()) {
                 users.add(userFromRS(rs));
             }
         } catch (Exception e) {
@@ -152,21 +175,21 @@ public class UserManagerDao {
             try {
                 ps.close();
                 con.close();
-            } catch (SQLException ex) {
+            } catch (Exception e) {
             }
         }
         return users;
     }
 
-    public static ArrayList<User> Followers(int id){
+    public static List<User> Followers(int id) {
         ArrayList users = new ArrayList();
         Connection con = ConnectionProvider.getCon();
         PreparedStatement ps = null;
         try {
             ps = con.prepareStatement("select * from users where id IN (SELECT this as id FROM follows WHERE other=?)");
-            ps.setString(1,String.valueOf(id));
+            ps.setString(1, String.valueOf(id));
             ResultSet rs = ps.executeQuery();
-            while(rs.next()){
+            while (rs.next()) {
                 users.add(userFromRS(rs));
             }
         } catch (Exception e) {
@@ -174,21 +197,21 @@ public class UserManagerDao {
             try {
                 ps.close();
                 con.close();
-            } catch (SQLException ex) {
+            } catch (Exception e) {
             }
         }
         return users;
     }
 
-    public static ArrayList<User> Friends(int id){
+    public static List<User> Friends(int id) {
         ArrayList users = new ArrayList();
         Connection con = ConnectionProvider.getCon();
         PreparedStatement ps = null;
         try {
             ps = con.prepareStatement("SELECT others.id, others.username FROM users AS this LEFT JOIN follows ON this.id=follows.this LEFT JOIN users AS others ON others.id=follows.other WHERE this.id=?");
-            ps.setString(1,String.valueOf(id));
+            ps.setString(1, String.valueOf(id));
             ResultSet rs = ps.executeQuery();
-            while(rs.next()){
+            while (rs.next()) {
                 users.add(userFromRS(rs));
             }
         } catch (Exception e) {
@@ -196,11 +219,12 @@ public class UserManagerDao {
             try {
                 ps.close();
                 con.close();
-            } catch (SQLException ex) {
+            } catch (Exception e) {
             }
         }
         return users;
     }
+
     public static boolean isInvited(int eventId, int userId) {
         Connection con = ConnectionProvider.getCon();
         PreparedStatement ps = null;
@@ -223,7 +247,7 @@ public class UserManagerDao {
         return result;
     }
 
-    private static User userFromRS(ResultSet rs) throws SQLException{ //įtariu, kad geriau nedaryt metodo, kuris masiskai rankios slaptazodzius, tai grazineja tik username ir id
+    private static User userFromRS(ResultSet rs) throws SQLException { //įtariu, kad geriau nedaryt metodo, kuris masiskai rankios slaptazodzius, tai grazineja tik username ir id
         User user = new User();
         user.setId(rs.getInt("id"));
         user.setUsername(rs.getString("username"));
