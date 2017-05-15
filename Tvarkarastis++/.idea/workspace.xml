@@ -2,26 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e3007fd-a1b6-47f1-b08f-d6fbf2ff3ec0" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/com.mysql.jdbc_5.1.5.jar" afterPath="$PROJECT_DIR$/src/lib/com.mysql.jdbc_5.1.5.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/com/tvarkarastis/dao/EventManagerDao.class" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/com/tvarkarastis/dao/EventManagerDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/com/tvarkarastis/dao/MessageManagerDao.class" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/com/tvarkarastis/dao/MessageManagerDao.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/com/tvarkarastis/dao/RegisterDao.class" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/com/tvarkarastis/dao/RegisterDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/com/tvarkarastis/dao/UserManagerDao.class" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/com/tvarkarastis/dao/UserManagerDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/com/tvarkarastis/entity/Event.class" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/com/tvarkarastis/entity/Event.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/com/tvarkarastis/entity/User.class" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/com/tvarkarastis/entity/User.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/tvarkarastis/dao/EventManagerDao.class" afterPath="$PROJECT_DIR$/target/classes/com/tvarkarastis/dao/EventManagerDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/tvarkarastis/dao/MessageManagerDao.class" afterPath="$PROJECT_DIR$/target/classes/com/tvarkarastis/dao/MessageManagerDao.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/tvarkarastis/dao/RegisterDao.class" afterPath="$PROJECT_DIR$/target/classes/com/tvarkarastis/dao/RegisterDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/tvarkarastis/dao/UserManagerDao.class" afterPath="$PROJECT_DIR$/target/classes/com/tvarkarastis/dao/UserManagerDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/tvarkarastis/entity/Event.class" afterPath="$PROJECT_DIR$/target/classes/com/tvarkarastis/entity/Event.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/tvarkarastis/entity/User.class" afterPath="$PROJECT_DIR$/target/classes/com/tvarkarastis/entity/User.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tvarkarastis/dao/EventManagerDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/tvarkarastis/dao/EventManagerDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tvarkarastis/dao/MessageManagerDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/tvarkarastis/dao/MessageManagerDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tvarkarastis/dao/RegisterDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/tvarkarastis/dao/RegisterDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tvarkarastis/dao/UserManagerDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/tvarkarastis/dao/UserManagerDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tvarkarastis/entity/Event.java" afterPath="$PROJECT_DIR$/src/main/java/com/tvarkarastis/entity/Event.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tvarkarastis/entity/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/tvarkarastis/entity/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/MethodTester.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/MethodTester.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/attends.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/attends.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/hostedBy.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/hostedBy.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/invitations.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/invitations.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/publicEvents.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/publicEvents.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/attends.jsp" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/attends.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/hostedBy.jsp" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/hostedBy.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/publicEvents.jsp" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/publicEvents.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/MethodTester.jsp" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/MethodTester.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/invitations.jsp" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/invitations.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -330,63 +326,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tvarkarastis++" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tvarkarastis++" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tvarkarastis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="entity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tvarkarastis++" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tvarkarastis++" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tvarkarastis" />
+              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -400,7 +340,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/lib" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -409,6 +349,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Tvarkarastis++\Tvarkarastis++\src\lib" />
       <recent name="C:\Users\Edvinas\Desktop\Semestro-projektas-master\Tvarkarastis++\src\main\webapp" />
       <recent name="C:\Users\Edvinas\Desktop\Semestro-projektas-master\Tvarkarastis++\src\main\webapp\images" />
       <recent name="C:\Users\Edvinas\Desktop\Semestro-projektas-master\Tvarkarastis++\src\main\resources" />
@@ -1015,7 +956,7 @@
       <workItem from="1494653132971" duration="28000" />
       <workItem from="1494653516560" duration="55667000" />
       <workItem from="1494827784589" duration="107000" />
-      <workItem from="1494828369777" duration="771000" />
+      <workItem from="1494828369777" duration="1175000" />
     </task>
     <task id="LOCAL-00001" summary="DateTime cleanup">
       <created>1493015805305</created>
@@ -1049,7 +990,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120453000" />
+    <option name="totallyTimeSpent" value="120857000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1085,13 +1026,13 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31587562" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31587562" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25189108" sideWeight="0.46866485" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31164902" sideWeight="0.5313352" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1410,15 +1351,15 @@
             <element signature="method#getInvitedEvents#0;class#EventManagerDao#0" expanded="false" />
             <element signature="method#getEvents#0;class#EventManagerDao#0" expanded="false" />
             <element signature="method#getEventFromRS#0;class#EventManagerDao#0" expanded="false" />
-            <marker date="1494829139886" expanded="true" signature="701:809" ph="insert into events... " />
-            <marker date="1494829139886" expanded="true" signature="1859:1888" ph="DELETE FROM " />
-            <marker date="1494829139886" expanded="true" signature="2727:2762" ph="select * fro... events" />
-            <marker date="1494829139886" expanded="true" signature="3617:3657" ph="select event... attends" />
-            <marker date="1494829139886" expanded="true" signature="3931:3964" ph="select * fro... events" />
-            <marker date="1494829139886" expanded="true" signature="4929:4986" ph="select * fro... events" />
-            <marker date="1494829139886" expanded="true" signature="5873:6043" ph="select * fro... events" />
-            <marker date="1494829139886" expanded="true" signature="5998:6042" ph="SELECT event... attends" />
-            <marker date="1494829139886" expanded="true" signature="7151:7225" ph="SELECT DISTI... " />
+            <marker date="1494829210419" expanded="true" signature="701:809" ph="insert into events... " />
+            <marker date="1494829210419" expanded="true" signature="1859:1888" ph="DELETE FROM " />
+            <marker date="1494829210419" expanded="true" signature="2727:2762" ph="select * fro... events" />
+            <marker date="1494829210419" expanded="true" signature="3617:3657" ph="select event... attends" />
+            <marker date="1494829210419" expanded="true" signature="3931:3964" ph="select * fro... events" />
+            <marker date="1494829210419" expanded="true" signature="4929:4986" ph="select * fro... events" />
+            <marker date="1494829210419" expanded="true" signature="5873:6043" ph="select * fro... events" />
+            <marker date="1494829210419" expanded="true" signature="5998:6042" ph="SELECT event... attends" />
+            <marker date="1494829210419" expanded="true" signature="7151:7225" ph="SELECT DISTI... " />
           </folding>
         </state>
       </provider>
@@ -1444,14 +1385,14 @@
             <element signature="method#sendMessage#0;class#MessageManagerDao#0" expanded="false" />
             <element signature="method#deleteMessage#0;class#MessageManagerDao#0" expanded="false" />
             <element signature="method#getMessageFromRS#0;class#MessageManagerDao#0" expanded="false" />
-            <marker date="1494829113340" expanded="true" signature="568:761" ph="SELECT messa... messageheader" />
-            <marker date="1494829113340" expanded="true" signature="1600:1750" ph="SELECT messa... messageheader" />
-            <marker date="1494829113340" expanded="true" signature="2510:2663" ph="SELECT messa... messageheader" />
-            <marker date="1494829113340" expanded="true" signature="3450:3504" ph="INSERT INTO messagetext... " />
-            <marker date="1494829113340" expanded="true" signature="3799:3878" ph="INSERT INTO messageheader... " />
-            <marker date="1494829113340" expanded="true" signature="4671:4709" ph="DELETE FROM " />
-            <marker date="1494829113340" expanded="true" signature="4900:4972" ph="DELETE FROM " />
-            <marker date="1494829113340" expanded="true" signature="4941:4971" ph="SELECT text messageheader" />
+            <marker date="1494829210421" expanded="true" signature="568:761" ph="SELECT messa... messageheader" />
+            <marker date="1494829210421" expanded="true" signature="1600:1750" ph="SELECT messa... messageheader" />
+            <marker date="1494829210421" expanded="true" signature="2510:2663" ph="SELECT messa... messageheader" />
+            <marker date="1494829210421" expanded="true" signature="3450:3504" ph="INSERT INTO messagetext... " />
+            <marker date="1494829210421" expanded="true" signature="3799:3878" ph="INSERT INTO messageheader... " />
+            <marker date="1494829210421" expanded="true" signature="4671:4709" ph="DELETE FROM " />
+            <marker date="1494829210421" expanded="true" signature="4900:4972" ph="DELETE FROM " />
+            <marker date="1494829210421" expanded="true" signature="4941:4971" ph="SELECT text messageheader" />
           </folding>
         </state>
       </provider>
@@ -1462,7 +1403,7 @@
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
             <element signature="method#register#0;class#RegisterDao#0" expanded="false" />
-            <marker date="1494828849874" expanded="true" signature="715:754" ph="insert into users... " />
+            <marker date="1494829210424" expanded="true" signature="715:754" ph="insert into users... " />
           </folding>
         </state>
       </provider>
@@ -1484,19 +1425,19 @@
             <element signature="method#getFriends#0;class#UserManagerDao#0" expanded="false" />
             <element signature="method#isInvited#0;class#UserManagerDao#0" expanded="false" />
             <element signature="method#getUserFromRS#0;class#UserManagerDao#0" expanded="false" />
-            <marker date="1494829113434" expanded="true" signature="586:625" ph="select id fr... users" />
-            <marker date="1494829113434" expanded="true" signature="1201:1233" ph="select * fro... users" />
-            <marker date="1494829113434" expanded="true" signature="1920:1960" ph="SELECT `publ... events" />
-            <marker date="1494829113434" expanded="true" signature="2318:2371" ph="INSERT INTO `attends`... " />
-            <marker date="1494829113434" expanded="true" signature="3096:3139" ph="DELETE FROM " />
-            <marker date="1494829113434" expanded="true" signature="3959:4005" ph="INSERT INTO follows... " />
-            <marker date="1494829113434" expanded="true" signature="4738:4781" ph="DELETE FROM " />
-            <marker date="1494829113434" expanded="true" signature="5448:5526" ph="select * fro... users" />
-            <marker date="1494829113434" expanded="true" signature="5481:5525" ph="SELECT other... follows" />
-            <marker date="1494829113434" expanded="true" signature="6172:6250" ph="select * fro... users" />
-            <marker date="1494829113434" expanded="true" signature="6205:6249" ph="SELECT this follows" />
-            <marker date="1494829113434" expanded="true" signature="6894:7057" ph="SELECT other... users" />
-            <marker date="1494829113434" expanded="true" signature="7703:7773" ph="SELECT COUNT... invitations" />
+            <marker date="1494829210427" expanded="true" signature="586:625" ph="select id fr... users" />
+            <marker date="1494829210427" expanded="true" signature="1201:1233" ph="select * fro... users" />
+            <marker date="1494829210427" expanded="true" signature="1920:1960" ph="SELECT `publ... events" />
+            <marker date="1494829210427" expanded="true" signature="2318:2371" ph="INSERT INTO `attends`... " />
+            <marker date="1494829210427" expanded="true" signature="3096:3139" ph="DELETE FROM " />
+            <marker date="1494829210427" expanded="true" signature="3959:4005" ph="INSERT INTO follows... " />
+            <marker date="1494829210427" expanded="true" signature="4738:4781" ph="DELETE FROM " />
+            <marker date="1494829210427" expanded="true" signature="5448:5526" ph="select * fro... users" />
+            <marker date="1494829210427" expanded="true" signature="5481:5525" ph="SELECT other... follows" />
+            <marker date="1494829210427" expanded="true" signature="6172:6250" ph="select * fro... users" />
+            <marker date="1494829210427" expanded="true" signature="6205:6249" ph="SELECT this follows" />
+            <marker date="1494829210427" expanded="true" signature="6894:7057" ph="SELECT other... users" />
+            <marker date="1494829210427" expanded="true" signature="7703:7773" ph="SELECT COUNT... invitations" />
           </folding>
         </state>
       </provider>
