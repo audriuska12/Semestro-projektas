@@ -14,26 +14,26 @@
             <% out.println(resources.getString("msg.hostedBy")); %>
         </h3>
     </div>
-    <table>
+    <table class="event-table">
         <tr class="event-table">
-            <th class="event-header">Name</th>
-            <th class="event-header">Location</th>
-            <th class="event-header">Start</th>
-            <th class="event-header">End</th>
-            <th class="event-header">Visibility</th>
+            <th class="event-table">Name</th>
+            <th class="event-table">Location</th>
+            <th class="event-table">Start</th>
+            <th class="event-table">End</th>
+            <th class="event-table">Visibility</th>
         </tr>
         <%
             List<Event> eventsHosted = EventManagerDao.eventsOfUser(session.getAttribute("username").toString());
             for (Event e : eventsHosted) {
-                out.println("<tr>");
-                out.println("<td>" + e.getName() + "</td>");
-                out.println("<td>" + e.getLocation() + "</td>");
-                out.println("<td>" + e.getStart().toString() + "</td>");
-                out.println("<td>" + e.getEnd().toString() + "</td>");
+                out.println("<tr class=\"event-table\">");
+                out.println("<td class=\"event-table\">" + e.getName() + "</td>");
+                out.println("<td class=\"event-table\">" + e.getLocation() + "</td>");
+                out.println("<td class=\"event-table-time\">" + e.getStart().toString() + "</td>");
+                out.println("<td class=\"event-table-time\">" + e.getEnd().toString() + "</td>");
                 if (e.isPublic()) {
-                    out.println("<td>Public</td>");
+                    out.println("<td class=\"event-table\">Publiccccccc</td>");
                 } else {
-                    out.println("<td>Private</td>");
+                    out.println("<td class=\"event-table\">Private</td>");
                 }
                 out.println("</tr>");
             }
