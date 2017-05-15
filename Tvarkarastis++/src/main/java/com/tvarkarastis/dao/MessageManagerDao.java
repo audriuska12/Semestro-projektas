@@ -5,7 +5,6 @@ import com.tvarkarastis.entity.Message;
 
 import java.sql.*;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 
 /**
@@ -26,7 +25,7 @@ public class MessageManagerDao {
                 ps.setString(3, String.valueOf(messageId));
                 ResultSet rs = ps.executeQuery();
                 rs.next();
-                message = messageFromRS(rs);
+                message = getMessageFromRS(rs);
             }
         }catch(Exception e){}finally{
             try{
@@ -38,7 +37,7 @@ public class MessageManagerDao {
         return message;
     }
 
-    public static List<Message> messagesSent(int userId){
+    public static List<Message> getMessagesSent(int userId){
         ArrayList<Message> messages = new ArrayList<>();
         Connection con = null;
         PreparedStatement ps = null;
@@ -49,7 +48,7 @@ public class MessageManagerDao {
                 ps.setString(1, String.valueOf(userId));
                 ResultSet rs = ps.executeQuery();
                 while(rs.next()){
-                    messages.add(messageFromRS(rs));
+                    messages.add(getMessageFromRS(rs));
                 }
             }
         }catch(Exception e){}finally{
@@ -62,7 +61,7 @@ public class MessageManagerDao {
         return messages;
     }
 
-    public static List<Message> messagesReceived(int userId){
+    public static List<Message> getMessagesReceived(int userId){
         ArrayList<Message> messages = new ArrayList<>();
         Connection con = null;
         PreparedStatement ps = null;
@@ -73,7 +72,7 @@ public class MessageManagerDao {
                 ps.setString(1, String.valueOf(userId));
                 ResultSet rs = ps.executeQuery();
                 while(rs.next()){
-                    messages.add(messageFromRS(rs));
+                    messages.add(getMessageFromRS(rs));
                 }
             }
         }catch(Exception e){}finally{
@@ -139,7 +138,7 @@ public class MessageManagerDao {
         return success;
     }
 
-    private static Message messageFromRS(ResultSet rs) throws SQLException {
+    private static Message getMessageFromRS(ResultSet rs) throws SQLException {
         Message message = new Message();
         message.setId(rs.getInt("id"));
         message.setSender(UserManagerDao.getUser(rs.getInt("sender")));

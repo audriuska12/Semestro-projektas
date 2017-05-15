@@ -45,7 +45,7 @@ public class UserManagerDao {
             ps.setString(1, String.valueOf(id));
             ResultSet rs = ps.executeQuery();
             if (rs.next()) {
-                user = userFromRS(rs);
+                user = getUserFromRS(rs);
             }
         } catch (Exception e) {
         } finally {
@@ -58,7 +58,7 @@ public class UserManagerDao {
         return user;
     }
 
-    public static int Attend(int eventId, int userId) { //-1: nekviestas; -2: SQL klaida; -3: toks jau yra; 1: suveike
+    public static int attend(int eventId, int userId) { //-1: nekviestas; -2: SQL klaida; -3: toks jau yra; 1: suveike
         Connection con = ConnectionProvider.getCon();
         PreparedStatement ps = null;
         int success = 0;
@@ -91,7 +91,7 @@ public class UserManagerDao {
         else return -3;
     }
 
-    public static boolean Unattend(int eventId, int userId) {
+    public static boolean unattend(int eventId, int userId) {
         Connection con = ConnectionProvider.getCon();
         PreparedStatement ps = null;
         int success = 0;
@@ -113,7 +113,7 @@ public class UserManagerDao {
         return success > 0;
     }
 
-    public static int Follow(int thisId, int otherId) {// -3: pats su savim -2: SQL klaida (greiciausiai jau yra) -1: ner tokio userio 1: pavyko
+    public static int follow(int thisId, int otherId) {// -3: pats su savim -2: SQL klaida (greiciausiai jau yra) -1: ner tokio userio 1: pavyko
         if (thisId == otherId) return -3;
         Connection con = ConnectionProvider.getCon();
         PreparedStatement ps = null;
@@ -137,7 +137,7 @@ public class UserManagerDao {
         return (success > 0 ? 1 : -1);
     }
 
-    public static boolean Unfollow(int thisId, int otherId) {
+    public static boolean unfollow(int thisId, int otherId) {
         Connection con = ConnectionProvider.getCon();
         PreparedStatement ps = null;
         int success = 0;
@@ -159,7 +159,7 @@ public class UserManagerDao {
         return success > 0;
     }
 
-    public static List<User> Followed(int id) {
+    public static List<User> getFollowed(int id) {
         ArrayList users = new ArrayList();
         Connection con = ConnectionProvider.getCon();
         PreparedStatement ps = null;
@@ -168,7 +168,7 @@ public class UserManagerDao {
             ps.setString(1, String.valueOf(id));
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {
-                users.add(userFromRS(rs));
+                users.add(getUserFromRS(rs));
             }
         } catch (Exception e) {
         } finally {
@@ -181,7 +181,7 @@ public class UserManagerDao {
         return users;
     }
 
-    public static List<User> Followers(int id) {
+    public static List<User> getFollowers(int id) {
         ArrayList users = new ArrayList();
         Connection con = ConnectionProvider.getCon();
         PreparedStatement ps = null;
@@ -190,7 +190,7 @@ public class UserManagerDao {
             ps.setString(1, String.valueOf(id));
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {
-                users.add(userFromRS(rs));
+                users.add(getUserFromRS(rs));
             }
         } catch (Exception e) {
         } finally {
@@ -203,7 +203,7 @@ public class UserManagerDao {
         return users;
     }
 
-    public static List<User> Friends(int id) {
+    public static List<User> getFriends(int id) {
         ArrayList users = new ArrayList();
         Connection con = ConnectionProvider.getCon();
         PreparedStatement ps = null;
@@ -212,7 +212,7 @@ public class UserManagerDao {
             ps.setString(1, String.valueOf(id));
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {
-                users.add(userFromRS(rs));
+                users.add(getUserFromRS(rs));
             }
         } catch (Exception e) {
         } finally {
@@ -247,7 +247,7 @@ public class UserManagerDao {
         return result;
     }
 
-    private static User userFromRS(ResultSet rs) throws SQLException { //įtariu, kad geriau nedaryt metodo, kuris masiskai rankios slaptazodzius, tai grazineja tik username ir id
+    private static User getUserFromRS(ResultSet rs) throws SQLException { //įtariu, kad geriau nedaryt metodo, kuris masiskai rankios slaptazodzius, tai grazineja tik username ir id
         User user = new User();
         user.setId(rs.getInt("id"));
         user.setUsername(rs.getString("username"));

@@ -18,7 +18,7 @@ Events you're invited to:
         <th>Visibility</th>
     </tr>
     <%
-        List<Event> eventsInvited = EventManagerDao.invitedEvents(session.getAttribute("username").toString());
+        List<Event> eventsInvited = EventManagerDao.getInvitedEvents(session.getAttribute("username").toString());
         for (Event e : eventsInvited) {
             out.println("<tr>");
             out.println("<td>" + e.getName() + "</td>");

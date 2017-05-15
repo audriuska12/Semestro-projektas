@@ -46,7 +46,7 @@ Sent messages:
         <th>Text</th>
     </tr>
     <%
-        List<Message> messages = MessageManagerDao.messagesSent(1);
+        List<Message> messages = MessageManagerDao.getMessagesSent(1);
         for(Message msg1: messages){
             out.println("<tr>");
             out.println("<td>" + msg1.getRecipient().getUsername()+ "</td>");
@@ -64,7 +64,7 @@ Received messages for user 2:
         <th>Text</th>
     </tr>
     <%
-        List<Message> messages2 = MessageManagerDao.messagesReceived(2);
+        List<Message> messages2 = MessageManagerDao.getMessagesReceived(2);
         for(Message msg2: messages2){
             out.println("<tr>");
             out.println("<td>" + msg2.getRecipient().getUsername()+ "</td>");
@@ -82,7 +82,7 @@ Received messages for user 3:
         <th>Text</th>
     </tr>
     <%
-        List<Message> messages3 = MessageManagerDao.messagesReceived(2);
+        List<Message> messages3 = MessageManagerDao.getMessagesReceived(2);
         for(Message msg3: messages3){
             out.println("<tr>");
             out.println("<td>" + msg3.getRecipient().getUsername()+ "</td>");
@@ -100,7 +100,7 @@ Received messages for user 4:
         <th>Text</th>
     </tr>
     <%
-        List<Message> messages4 = MessageManagerDao.messagesReceived(4);
+        List<Message> messages4 = MessageManagerDao.getMessagesReceived(4);
         for(Message msg4: messages4){
             out.println("<tr>");
             out.println("<td>" + msg4.getRecipient().getUsername()+ "</td>");

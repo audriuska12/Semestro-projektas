@@ -13,8 +13,8 @@ import java.util.List;
  */
 public class EventManagerDao {
 
-    public static int InsertEvent(Event event) { //grazinimo reiksmes: -2: SQL klaida; -1: neteisingi duomenys; 1: teisinga
-        if (!event.Validate()) return -1;
+    public static int insertEvent(Event event) { //grazinimo reiksmes: -2: SQL klaida; -1: neteisingi duomenys; 1: teisinga
+        if (!event.validate()) return -1;
         Connection con = null;
         PreparedStatement ps = null;
         boolean success = false;
@@ -70,7 +70,7 @@ public class EventManagerDao {
         return success;
     }
 
-    public static List<Event> eventsOfUser(String username) {
+    public static List<Event> getEventsOfUser(String username) {
         ArrayList<Event> events = new ArrayList<Event>();
         Connection con = null;
         PreparedStatement ps = null;
@@ -83,7 +83,7 @@ public class EventManagerDao {
                 ps.setString(1, String.valueOf(id));
                 rs = ps.executeQuery();
                 while (rs.next()) {
-                    events.add(eventFromRS(rs));
+                    events.add(getEventFromRS(rs));
                 }
             }
         } catch (Exception e) {
@@ -97,7 +97,7 @@ public class EventManagerDao {
         return events;
     }
 
-    public static List<Event> eventsUserAttends(String username) {
+    public static List<Event> getEventsUserAttends(String username) {
         ArrayList<Event> events = new ArrayList<Event>();
         Connection con = null;
         PreparedStatement ps = null;
@@ -116,7 +116,7 @@ public class EventManagerDao {
                     ps.setString(1, String.valueOf(i));
                     rs = ps.executeQuery();
                     while (rs.next()) {
-                        events.add(eventFromRS(rs));
+                        events.add(getEventFromRS(rs));
                     }
                 }
             }
@@ -132,7 +132,7 @@ public class EventManagerDao {
         return events;
     }
 
-    public static List<Event> publicEvents(String username) {
+    public static List<Event> getPublicEvents(String username) {
         ArrayList<Event> events = new ArrayList<Event>();
         Connection con = null;
         PreparedStatement ps = null;
@@ -145,7 +145,7 @@ public class EventManagerDao {
                 ps.setString(1, String.valueOf(id));
                 rs = ps.executeQuery();
                 while (rs.next()) {
-                    events.add(eventFromRS(rs));
+                    events.add(getEventFromRS(rs));
                 }
             }
         } catch (Exception e) {
@@ -160,7 +160,7 @@ public class EventManagerDao {
         return events;
     }
 
-    public static List<Event> invitedEvents(String username){
+    public static List<Event> getInvitedEvents(String username){
         ArrayList<Event> events = new ArrayList<Event>();
         Connection con = null;
         PreparedStatement ps = null;
@@ -174,7 +174,7 @@ public class EventManagerDao {
                 ps.setString(2, String.valueOf(id));
                 rs = ps.executeQuery();
                 while (rs.next()) {
-                    events.add(eventFromRS(rs));
+                    events.add(getEventFromRS(rs));
                 }
             }
         } catch (Exception e) {
@@ -239,7 +239,7 @@ public class EventManagerDao {
                 }
                 rs = ps.executeQuery();
                 while (rs.next()) {
-                    events.add(eventFromRS(rs));
+                    events.add(getEventFromRS(rs));
                 }
             }
         } catch (Exception e){
@@ -255,7 +255,7 @@ public class EventManagerDao {
         return events;
     }
 
-    private static Event eventFromRS(ResultSet rs) throws SQLException {
+    private static Event getEventFromRS(ResultSet rs) throws SQLException {
         Event event = new Event();
         event.setName(rs.getString("name"));
         event.setLocation(rs.getString("location"));
