@@ -14,7 +14,7 @@ public class Event {
     public Event() {
     }
 
-    public boolean Validate(){
+    public boolean validate(){
         if(host < 1) return false;
         if (name == null || name.isEmpty() || name.length() <5 ) return false;
         if(location == null || location.isEmpty() || location.length() <5 ) return false;

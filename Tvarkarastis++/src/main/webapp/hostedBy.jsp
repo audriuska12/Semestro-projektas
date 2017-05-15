@@ -23,7 +23,7 @@
             <th class="event-header">Visibility</th>
         </tr>
         <%
-            List<Event> eventsHosted = EventManagerDao.eventsOfUser(session.getAttribute("username").toString());
+            List<Event> eventsHosted = EventManagerDao.getEventsOfUser(session.getAttribute("username").toString());
             for (Event e : eventsHosted) {
                 out.println("<tr>");
                 out.println("<td>" + e.getName() + "</td>");

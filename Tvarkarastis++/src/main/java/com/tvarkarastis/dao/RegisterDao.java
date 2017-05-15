@@ -7,9 +7,10 @@ import java.sql.*;
 
 public class RegisterDao {
 
-    public static int register(User u) { // -2: netinkami duomenys; -1: jau yra toks username 0: kazkas nepavyko 1: sekmingai ideta
-        if(u.Validate()<0) return -2;
-        if (UserManagerDao.getUserId(u.getUsername()) != -1) return -1;
+    public static int register(User u) { // -4: jau yra toks user; -3: netinkamas slaptazodis; -2: netinkamas email; -1: netinkamas username; 0: kazkas nepavyko 1: sekmingai ideta
+        int valid = u.validate();
+        if(valid<0) return valid;
+        if (UserManagerDao.getUserId(u.getUsername()) != -1) return -4;
         int status = 0;
         Connection con = null;
         PreparedStatement ps = null;
