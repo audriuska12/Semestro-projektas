@@ -1,0 +1,43 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: var(--grey4);
+    margin-top: 0;
+    margin-left: 0;
+}
+
+div.content {
+    background-image: url("/images/background.jpg");
+    background-position: center;
+    background-size: cover;
+    align-content: center;
+    height: 100%;
+    widht: 100%;
+}
+
+div.container {
+    height: 100%;
+    width: 100%;
+}
+
+div.header {
+    font-family: Arial;
+    text-align: right;
+    background: var(--grey4);
+    padding: 15px;
+}
+
+div.footer {
+    font-family: Arial;
+    text-align: center;
+    background: var(--grey4);
+    padding: 12px;
+    color: var(--blue3);
+}
+
+h6.authors {
+    font-size: 12px;
+}

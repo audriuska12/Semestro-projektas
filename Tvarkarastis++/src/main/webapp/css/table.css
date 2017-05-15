@@ -1,0 +1,17 @@
+h3.table-title {
+    color: var(--grey4);
+    font-family: Tahoma;
+    font-size: 20px;
+}
+div.table-name-container {
+    text-align: center;
+}
+div.table-container {
+    height: 100%;
+    margin: 0 auto;
+    background-color: var(--blue2);
+    min-width: 700px;
+    max-width: 900px;
+    box-shadow: 5px 5px 5px var(--grey3);
+    text-align: center;
+}

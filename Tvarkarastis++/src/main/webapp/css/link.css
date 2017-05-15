@@ -1,0 +1,17 @@
+h1.home {
+    font-size: 40px;
+}
+h1 a.home {
+    color: var(--blue4);
+    transition-duration: 0.3s;
+    text-decoration: none;
+}
+a.home:link {
+    color: var(--blue4);
+}
+a.home:hover {
+    color: var(--blue3);
+}
+a.home:active {
+    color: var(--blue3);
+}

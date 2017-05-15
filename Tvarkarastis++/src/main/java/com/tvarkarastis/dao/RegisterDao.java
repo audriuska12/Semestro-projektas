@@ -8,7 +8,7 @@ import java.sql.*;
 public class RegisterDao {
 
     public static int register(User u) { // -2: netinkami duomenys; -1: jau yra toks username 0: kazkas nepavyko 1: sekmingai ideta
-        if(!u.Validate()) return -2;
+        if(u.Validate()<0) return -2;
         if (UserManagerDao.getUserId(u.getUsername()) != -1) return -1;
         int status = 0;
         Connection con = null;

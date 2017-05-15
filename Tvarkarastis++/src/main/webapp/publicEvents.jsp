@@ -18,7 +18,7 @@ Public:
         <th>Visibility</th>
     </tr>
     <%
-        ArrayList<Event> eventsPublic = EventManagerDao.publicEvents(session.getAttribute("username").toString());
+        List<Event> eventsPublic = EventManagerDao.publicEvents(session.getAttribute("username").toString());
         for (Event e : eventsPublic) {
             out.println("<tr>");
             out.println("<td>" + e.getName() + "</td>");

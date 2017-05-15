@@ -7,10 +7,11 @@ public class User {
     private String username, email, password;
     private int id;
 
-    public boolean Validate(){
-        if(username.length() < 6) return false;
-        if(email == null || !email.matches("^[a-zA-Z0-9]+@[a-zA-Z0-9]+.[a-zA-Z0-9]+$")) return false;
-        return !(password.length() < 6 || password.equals(password.toLowerCase()) || password.equals(password.toUpperCase()));
+    public int Validate(){
+        if(username == null || username.length() < 6) return -1;
+        if(email == null || !email.matches("^[a-zA-Z0-9]+@[a-zA-Z0-9]+.[a-zA-Z0-9]+$")) return -2;
+        if (password == null || password.length() < 6 || password.equals(password.toLowerCase()) || password.equals(password.toUpperCase())) return -3;
+        return 1;
     }
     public String getUsername() {
         return username;

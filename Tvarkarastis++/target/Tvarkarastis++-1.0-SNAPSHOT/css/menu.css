@@ -1,0 +1,49 @@
+ul.menu {
+    vertical-align: middle;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--grey3);
+    width: 100%;
+}
+
+li.menu-elem-left-align {
+    float: left;
+}
+li.menu-elem-right-align {
+     float: right;
+}
+li.user-info-left-align {
+    float: left;
+    color: var(--blue2);
+    text-decoration: none;
+    font-family: Tahoma;
+    font-size: 18px;
+    margin-left: 13px;
+    margin-top: 11px;
+}
+
+li a {
+    display: block;
+    color: var(--color1);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition-duration: 0.3s;
+    font-family: Verdana;
+}
+
+li a:hover {
+    background-color: var(--grey4);
+    color: var(--color4);
+}
+
+div.user-info {
+    text-align: left;
+    background: var(--grey3);
+    width: 100%;
+}
+
+
+

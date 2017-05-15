@@ -30,7 +30,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/Desktop/Tvarkarastis++/com.mysql.jdbc_5.1.5.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Tvarkarastis++/com.mysql.jdbc_5.1.5.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

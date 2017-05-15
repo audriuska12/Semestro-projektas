@@ -18,7 +18,7 @@ Your attended events:
         <th>Visibility</th>
     </tr>
     <%
-        ArrayList<Event> eventsAttended = EventManagerDao.eventsUserAttends(session.getAttribute("username").toString());
+        List<Event> eventsAttended = EventManagerDao.eventsUserAttends(session.getAttribute("username").toString());
         for (Event e : eventsAttended) {
             out.println("<tr>");
             out.println("<td>" + e.getName() + "</td>");
