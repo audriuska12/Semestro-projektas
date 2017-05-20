@@ -22,96 +22,12 @@
     <title>Test</title>
 </head>
 <body>
-Message #2:
-<table>
-    <tr>
-    <th>Recipient</th>
-    <th>Sender</th>
-    <th>Text</th>
-    </tr>
 <%
-    Message mess = MessageManagerDao.getMessage(1, 2);
-    out.println("<tr>");
-    out.println("<td>" + mess.getRecipient().getUsername()+ "</td>");
-    out.println("<td>" + mess.getSender().getUsername()+ "</td>");
-    out.println("<td>" + mess.getText()+ "</td>");
-    out.println("</tr>");
+    out.println(UserManagerDao.uninvite(1,1,1));
+    out.println(UserManagerDao.uninvite(2,1,1));
+    out.println(UserManagerDao.uninvite(1,2,2));
+    out.println(UserManagerDao.uninvite(1,2,1));
+    out.println(UserManagerDao.uninvite(1,2,1));
 %>
-</table>
-Sent messages:
-<table>
-    <tr>
-        <th>Recipient</th>
-        <th>Sender</th>
-        <th>Text</th>
-    </tr>
-    <%
-        List<Message> messages = MessageManagerDao.getMessagesSent(1);
-        for(Message msg1: messages){
-            out.println("<tr>");
-            out.println("<td>" + msg1.getRecipient().getUsername()+ "</td>");
-            out.println("<td>" + msg1.getSender().getUsername()+ "</td>");
-            out.println("<td>" + msg1.getText()+ "</td>");
-            out.println("</tr>");
-        }
-    %>
-</table>
-Received messages for user 2:
-<table>
-    <tr>
-        <th>Recipient</th>
-        <th>Sender</th>
-        <th>Text</th>
-    </tr>
-    <%
-        List<Message> messages2 = MessageManagerDao.getMessagesReceived(2);
-        for(Message msg2: messages2){
-            out.println("<tr>");
-            out.println("<td>" + msg2.getRecipient().getUsername()+ "</td>");
-            out.println("<td>" + msg2.getSender().getUsername()+ "</td>");
-            out.println("<td>" + msg2.getText()+ "</td>");
-            out.println("</tr>");
-        }
-    %>
-</table>
-Received messages for user 3:
-<table>
-    <tr>
-        <th>Recipient</th>
-        <th>Sender</th>
-        <th>Text</th>
-    </tr>
-    <%
-        List<Message> messages3 = MessageManagerDao.getMessagesReceived(2);
-        for(Message msg3: messages3){
-            out.println("<tr>");
-            out.println("<td>" + msg3.getRecipient().getUsername()+ "</td>");
-            out.println("<td>" + msg3.getSender().getUsername()+ "</td>");
-            out.println("<td>" + msg3.getText()+ "</td>");
-            out.println("</tr>");
-        }
-    %>
-</table>
-Received messages for user 4:
-<table>
-    <tr>
-        <th>Recipient</th>
-        <th>Sender</th>
-        <th>Text</th>
-    </tr>
-    <%
-        List<Message> messages4 = MessageManagerDao.getMessagesReceived(4);
-        for(Message msg4: messages4){
-            out.println("<tr>");
-            out.println("<td>" + msg4.getRecipient().getUsername()+ "</td>");
-            out.println("<td>" + msg4.getSender().getUsername()+ "</td>");
-            out.println("<td>" + msg4.getText()+ "</td>");
-            out.println("</tr>");
-        }
-    %>
-</table>
 </body>
-<%
-    MessageManagerDao.deleteMessage(1);
-%>
 </html>

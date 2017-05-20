@@ -58,6 +58,68 @@ public class UserManagerDao {
         return user;
     }
 
+    public static int invite(int inviterId, int invitedId, int eventId){ //-3: kviecia ne host'as; -2: nera tokio event'o; -1: kviecia save; 0: SQL klaida (greiciausiai jau pakviestas) 1: pavyko
+        if(inviterId==invitedId) return -1;
+        Connection con = ConnectionProvider.getCon();
+        PreparedStatement ps = null;
+        int success = 0;
+        try{
+            ps = con.prepareStatement("SELECT host FROM events WHERE id = ?");
+            ps.setString(1, String.valueOf(eventId));
+            ResultSet rs = ps.executeQuery();
+            if(!rs.next()) success = -2;
+            if(inviterId != rs.getInt("host")){
+                success = -3;
+            } else {
+                ps = con.prepareStatement("INSERT INTO invitations(user, event) VALUES (?, ?)");
+                ps.setString(1, String.valueOf(invitedId));
+                ps.setString(2, String.valueOf(eventId));
+                success = ps.executeUpdate();
+            }
+        } catch(Exception e){
+            String err = e.toString();
+            System.out.println(err);
+        } finally{
+            try{
+                ps.close();
+                con.close();
+            } catch(Exception e){
+            }
+        }
+        return success;
+    }
+
+    public static int uninvite(int uninviterId, int uninvitedId, int eventId){ // -3: ne host'as -2: ner event'o -1: pats save 0: nebuvo pakviestas 1: pavyko
+        if(uninviterId==uninvitedId) return -1;
+        Connection con = ConnectionProvider.getCon();
+        PreparedStatement ps = null;
+        int success = 0;
+        try{
+            ps = con.prepareStatement("SELECT host FROM events WHERE id = ?");
+            ps.setString(1, String.valueOf(eventId));
+            ResultSet rs = ps.executeQuery();
+            if(!rs.next()) success = -2;
+            if(uninviterId != rs.getInt("host")){
+                success = -3;
+            } else {
+                ps = con.prepareStatement("DELETE FROM invitations WHERE user = ? AND event = ?");
+                ps.setString(1, String.valueOf(uninvitedId));
+                ps.setString(2, String.valueOf(eventId));
+                success = ps.executeUpdate();
+            }
+        } catch(Exception e){
+            String err = e.toString();
+            System.out.println(err);
+        } finally{
+            try{
+                ps.close();
+                con.close();
+            } catch(Exception e){
+            }
+        }
+        return success;
+    }
+
     public static int attend(int eventId, int userId) { //-1: nekviestas; -2: SQL klaida; -3: toks jau yra; 1: suveike
         Connection con = ConnectionProvider.getCon();
         PreparedStatement ps = null;
