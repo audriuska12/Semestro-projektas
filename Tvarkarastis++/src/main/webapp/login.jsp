@@ -1,4 +1,4 @@
-<%--
+﻿<%--
   Created by IntelliJ IDEA.
   User: audri
   Date: 2017-04-16
@@ -6,7 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html></html>
+<%@ include file="tagHeader.jsp"%>
 <head>
     <%@include file="stylesheetsHeader.jsp"%>
     <title>
@@ -21,34 +21,36 @@
         <h3 class="form-header">
             <%out.println(resources.getString("msg.loginMessage"));%>
         </h3>
-        <form action="loginprocess.jsp" method="post">
+        <form:form action="/loginprocess" method="POST" commandName="obj">
             <table class="form-container">
                 <tr>
-                    <td class="form-label"><%out.println(resources.getString("msg.username"));%></td>
+                    <td class="form-label">
+                        <%out.println(resources.getString("msg.username"));%>
+                    </td>
                     <td class="form-entry">
-                        <input class="form-entry" type="text" name="username"/>
+                        <form:input class="form-entry" type="text" path="username"/>
                     </td>
                 </tr>
                 <tr>
-                    <td class="form-label"><%out.println(resources.getString("msg.password"));%></td>
+                    <td class="form-label">
+                        <%out.println(resources.getString("msg.password"));%>
+                    </td>
                     <td class="form-entry">
-                        <input class="form-entry" type="password" name="password"/>
+                        <form:input class="form-entry" type="password" path="password"/>
                     </td>
                 </tr>
             </table>
             <h4 class="failed">
-                <%
-                    if(session.getAttribute("logfailed") != null && (boolean)session.getAttribute("logfailed")){
-                        out.println(resources.getString("msg.loginFailed"));
-                        session.removeAttribute("logfailed");
-                    }
-                %>
+                <c:if test="${errorMessage != null}">
+                    <c:out value="${errorMessage}" />
+                </c:if>
             </h4>
             <div class="form-bottom">
                 <input type="submit" value="<%out.println(resources.getString("msg.submitLogin"));%>"/>
             </div>
-        </form>
+        </form:form>
     </div>
     <%@include file="footer.jsp"%>
 </body>
 </html>
+

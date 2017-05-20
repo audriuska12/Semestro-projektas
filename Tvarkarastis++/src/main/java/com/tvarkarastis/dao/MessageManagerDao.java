@@ -85,11 +85,15 @@ public class MessageManagerDao {
         return messages;
     }
 
+    public static int send(int senderID, String text, int... recipientIDs) {
+        return sendMessage(senderID, recipientIDs, text);
+    }
+
     public static int sendMessage(int senderId, int[] recipientIds, String messageText){ //grazina sekmingai issiustu skaiciu
         Connection con = null;
         PreparedStatement ps = null;
         int count = 0;
-        try{
+        try {
             con = ConnectionProvider.getCon();
             if(con != null) {
                 ps = con.prepareStatement("INSERT INTO messagetext (id, text) VALUES (default, ?)", Statement.RETURN_GENERATED_KEYS);
@@ -146,4 +150,12 @@ public class MessageManagerDao {
         message.setText(rs.getString("text"));
         return message;
     }
+//    private static Message getMessageFromRS(ResultSet rs) throws SQLException {
+//        Message message = new Message();
+//        message.setId(rs.getInt("id"));
+//        message.setSender(UserManagerDao.getUser(rs.getInt("sender")).getId());
+//        message.setRecipient(UserManagerDao.getUser(rs.getInt("recipient")).getId());
+//        message.setText(rs.getString("text"));
+//        return message;
+//    }
 }

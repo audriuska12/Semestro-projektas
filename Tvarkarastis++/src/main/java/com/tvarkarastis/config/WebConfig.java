@@ -8,6 +8,8 @@ import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
+import java.util.ResourceBundle;
+
 /**
  * Created by audri on 2017-04-10.
  */
@@ -22,6 +24,11 @@ public class WebConfig extends WebMvcConfigurerAdapter{
         resolver.setPrefix("/");
         resolver.setSuffix(".jsp");
         return resolver;
+    }
+
+    @Bean
+    public ResourceBundle getResourceBundle () {
+        return ResourceBundle.getBundle("messages");
     }
 
     @Override

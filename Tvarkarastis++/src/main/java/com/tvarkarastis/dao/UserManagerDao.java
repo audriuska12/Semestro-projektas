@@ -58,6 +58,10 @@ public class UserManagerDao {
         return user;
     }
 
+    public static boolean attendAnEvent(int eventID, int userID) {
+        return attend(eventID, userID) > 0;
+    }
+
     public static int attend(int eventId, int userId) { //-1: nekviestas; -2: SQL klaida; -3: toks jau yra; 1: suveike
         Connection con = ConnectionProvider.getCon();
         PreparedStatement ps = null;

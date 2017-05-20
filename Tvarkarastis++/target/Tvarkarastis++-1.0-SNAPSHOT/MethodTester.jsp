@@ -1,4 +1,4 @@
-<%@ page import="com.tvarkarastis.dao.EventManagerDao" %>
+﻿<%@ page import="com.tvarkarastis.dao.EventManagerDao" %>
 <%@ page import="java.time.LocalDateTime" %>
 <%@ page import="com.tvarkarastis.entity.Event" %>
 <%@ page import="java.util.ArrayList" %>

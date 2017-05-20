@@ -1,5 +1,8 @@
 package com.tvarkarastis.entity;
 
+import com.tvarkarastis.dao.UserManagerDao;
+
+import java.sql.Timestamp;
 import java.time.LocalDateTime;
 
 /**
@@ -10,6 +13,7 @@ public class Event {
     private boolean isPublic;
     private String name, location;
     private LocalDateTime start, end;
+    private int id;
 
     public Event() {
     }
@@ -67,5 +71,54 @@ public class Event {
 
     public void setPublic(boolean isPublic) {
         this.isPublic = isPublic;
+    }
+
+    public boolean isOpen() {
+        return isPublic;
+    }
+    public void setOpen(boolean isOpen) {
+        isPublic = isOpen;
+    }
+
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public User getHostUser() {
+        return UserManagerDao.getUser(getHost());
+    }
+
+    public void setStartDateTime(Timestamp dateTime) {
+        start = dateTime.toLocalDateTime();
+    }
+
+    public Timestamp getStartDateTime() {
+        return Timestamp.valueOf(start);
+    }
+
+    public void setEndDateTime(Timestamp dateTime) {
+        end = dateTime.toLocalDateTime();
+    }
+
+    public Timestamp getEndDateTime() {
+        return Timestamp.valueOf(end);
+    }
+
+    @Override
+    public String toString() {
+        return "Event{" +
+                "host=" + host +
+                ", isPublic=" + isPublic +
+                ", name='" + name + '\'' +
+                ", location='" + location + '\'' +
+                ", start=" + start +
+                ", end=" + end +
+                ", id=" + id +
+                '}';
     }
 }

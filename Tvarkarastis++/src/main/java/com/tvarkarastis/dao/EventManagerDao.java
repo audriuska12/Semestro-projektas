@@ -263,6 +263,7 @@ public class EventManagerDao {
         event.setEnd((rs.getTimestamp("end").toLocalDateTime()));
         event.setPublic(rs.getBoolean("public"));
         event.setHost(rs.getInt("host"));
+        event.setId(rs.getInt("id"));
         return event;
     }
 }

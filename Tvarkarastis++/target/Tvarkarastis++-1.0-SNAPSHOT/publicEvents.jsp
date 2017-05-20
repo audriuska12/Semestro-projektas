@@ -1,4 +1,4 @@
-<%@ page import="com.tvarkarastis.entity.Event" %>
+﻿<%@ page import="com.tvarkarastis.entity.Event" %>
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="com.tvarkarastis.dao.EventManagerDao" %><%--
   Created by IntelliJ IDEA.

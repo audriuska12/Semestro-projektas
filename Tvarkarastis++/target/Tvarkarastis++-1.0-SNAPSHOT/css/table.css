@@ -3,16 +3,23 @@ h3.table-title {
     font-family: Tahoma;
     font-size: 20px;
 }
+
 div.table-name-container {
     padding: 15px;
     text-align: center;
+    background-color: var(--blue3);
 }
 div.table-container {
-    height: 100%;
+    height: 70%;
     margin: 0 auto;
+    text-align: center;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+div.table-and-name-container {
+    height: 100%;
+    /*margin: -10% auto;*/
     background-color: var(--blue3);
-    min-width: 700px;
-    max-width: 900px;
     box-shadow: 5px 5px 5px var(--grey3);
     text-align: center;
 }
@@ -20,12 +27,10 @@ div.table-container {
 table.event-table {
     border-collapse: collapse;
     background-color: var(--blue0);
-    margin: 5px auto;
+    margin: 0 auto;
     text-align: center;
-    min-width: 700px;
-    max-width: 900px;
-}
 
+}
 
 th.event-table {
     background-color: var(--blue4);
@@ -40,6 +45,9 @@ tr.event-table {
     border: none;
     border-bottom: 1px solid var(--blue4);
 }
+tr.event-table:hover {
+    background-color: var(--blue2);
+}
 td.event-table {
     border-bottom: 1px solid var(--blue4);
     font-family: Verdana;
@@ -51,3 +59,56 @@ td.event-table-time {
     padding: 12px 25px;
     text-align: left;
 }
+img.remove {
+    background-color: var(--blue2);
+    padding: 5px;
+    height: 15px;
+    width: 15px;
+}
+img.remove:hover {
+    background-color: var(--blue4);
+}
+a.image {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+div.add-new {
+    /*margin-top: 15px;*/
+    text-align: center;
+    padding-top: 15px;
+    padding-bototm: 15px;
+}
+
+a.add-new {
+    color: var(--grey3);
+    background-color: var(--blue4);
+    padding: 10px 25px;
+    text-decoration:  none;
+    font-family: Verdana;
+    font-size: 18px;
+    transition-duration: 0.3s;
+}
+a.add-new:hover {
+    color: var(--color4);
+    background-color: var(--grey1);
+}
+
+div.no-elements {
+    background-color: var(--blue1);
+    min-width: 250px;
+    max-width: 450px;
+    margin: 12% auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    box-shadow: 5px 5px 6px var(--grey3);
+}
+
+h4.no-elements {
+    font-family: Tahoma;
+    font-size: 18px;
+    color: var(--grey3);
+}
+

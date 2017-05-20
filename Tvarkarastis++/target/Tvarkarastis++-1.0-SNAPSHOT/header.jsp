@@ -1,3 +1,4 @@
+﻿<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: audri
@@ -7,32 +8,46 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
-<%
-    out.println("<div class=\"container\">");
+<div class="container">
+    <div class="header">
+        <h1>
+            <a class="home" href="/">
+                <%out.println(resources.getString("msg.appName")); %>
+            </a>
+        </h1>
+    </div>
 
-    out.println("<div class=\"header\">");
-    out.println(String.format("<h1><a class=\"home\" href=\"index.jsp\">%s</a></h1>", resources.getString("msg.appName")));
-    out.println("</div>");
-
-    out.println("<div class=\"user-info\">");
-    if(session.getAttribute("username") != null){
-
-        out.println("<ul class=\"menu\">");
-        out.println(String.format("<li class=\"user-info-left-align\">%s %s</li>", resources.getString("msg.welcome"), session.getAttribute("username")));
-        out.println(String.format("<li class=\"menu-elem-right-align\"><a href=\"logout.jsp\">%s</a></li>", resources.getString("msg.logout")));
-        out.println(String.format("<li class=\"menu-elem-right-align\"><a href=\"profile.jsp\">%s</a></li>", resources.getString("msg.profile")));
-        out.println("</ul>");
-
-    } else {
-
-        out.println("<ul class=\"menu\">");
-        out.println(String.format("<li class=\"menu-elem-left-align\"><a href=\"login.jsp\">%s</a></li>", resources.getString("msg.login")));
-        out.println(String.format("<li class=\"menu-elem-left-align\"><a href=\"register.jsp\">%s</a></li>", resources.getString("msg.register")));
-        out.println("</ul>");
-    }
-
-    out.println("</div>");
-
-    out.println("<div class=\"content\">");
-%>
-<%--</br>--%>
+    <div class="user-info">
+        <ul class="menu">
+            <c:choose>
+                <c:when test="${username != null}">
+                    <li class="user-info-left-align">
+                        <%out.println(String.format("%s %s", resources.getString("msg.welcome"), session.getAttribute("username")));%>
+                    </li>
+                    <li class="menu-elem-right-align">
+                        <a class="menu-item" href="/logout">
+                            <%out.println(resources.getString("msg.logout"));%>
+                        </a>
+                    </li>
+                    <li class="menu-elem-right-align">
+                        <a class="menu-item" href="/profile">
+                            <%out.println(resources.getString("msg.profile"));%>
+                        </a>
+                    </li>
+                </c:when>
+                <c:otherwise>
+                    <li class="menu-elem-left-align">
+                        <a class="menu-item" href="/login">
+                            <%out.println(resources.getString("msg.login"));%>
+                        </a>
+                    </li>
+                    <li class="menu-elem-left-align">
+                        <a class="menu-item" href="/register">
+                            <%out.println(resources.getString("msg.register"));%>
+                        </a>
+                    </li>
+                </c:otherwise>
+            </c:choose>
+        </ul>
+    </div>
+<div class="content">

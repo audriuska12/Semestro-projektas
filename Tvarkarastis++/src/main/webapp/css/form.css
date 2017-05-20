@@ -2,8 +2,8 @@ div.form-container {
     background-color: var(--blue1);
     min-width: 250px;
     max-width: 450px;
+    margin: 12% auto;
     padding-top: 3px;
-    margin: 0 auto;
     text-align: center;
     box-shadow: 5px 5px 6px var(--grey3);
 }
@@ -47,10 +47,18 @@ td.form-label {
     width: 50%;
 }
 
+
 td.form-entry {
     padding-left: 30px;
     padding-top: 10px;
     width: 50%;
+}
+
+tr.form-entry-big {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    width: 100%;
 }
 
 table.form-container {
@@ -80,4 +88,32 @@ h4.failed {
     font-size: 14px;
     margin-left: 30px;
     text-align: left;
+}
+h4.success {
+    color: var(--grey3);
+    font-family: Verdana;
+    font-size: 16px;
+    margin-left: 30px;
+    text-align: left;
+}
+
+input[type=radio].form-entry {
+
+}
+input[type=radio].form-entry:checked {
+
+}
+label.form-entry {
+    font-family: Verdana;
+    font-size: 12px;
+    color: var(--blue4);
+}
+
+td.form-label-message {
+    color: var(--grey4);
+    size: 19px;
+    font-family: Verdana;
+    padding-left: 30px;
+    padding-top: 10px;
+    width: 50%;
 }

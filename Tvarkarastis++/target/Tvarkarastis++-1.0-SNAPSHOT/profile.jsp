@@ -1,4 +1,4 @@
-<%@ page import="com.tvarkarastis.entity.Event" %>
+﻿﻿<%@ page import="com.tvarkarastis.entity.Event" %>
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="com.tvarkarastis.dao.EventManagerDao" %><%--
   Created by IntelliJ IDEA.
@@ -12,17 +12,14 @@
 <head>
     <%@include file="stylesheetsHeader.jsp"%>
     <title>
-        <%out.println(String.format("%s | %s", resources.getString("msg.login"), resources.getString("msg.userProfile")));%>
+        <%out.println(String.format("%s | %s", resources.getString("msg.userProfile"), resources.getString("msg.appName")));%>
     </title>
 </head>
-
 <body>
-<%@include file="header.jsp"%>
+    <%@include file="header.jsp"%>
+    <%@include file="userMenuHeader.jsp"%>
+</table>
 
-<%@include file="hostedBy.jsp"%>
-<%--<%@include file="attends.jsp"%>--%>
-<%--<%@include file="invitations.jsp"%>--%>
-<%--<%@include file="publicEvents.jsp"%>--%>
 
 <%@include file="footer.jsp"%>
 </body>
