@@ -57,11 +57,10 @@ public class UserManagerDao {
         }
         return user;
     }
-
-<<<<<<< HEAD
     public static boolean attendAnEvent(int eventID, int userID) {
         return attend(eventID, userID) > 0;
-=======
+    }
+
     public static int invite(int inviterId, int invitedId, int eventId){ //-3: kviecia ne host'as; -2: nera tokio event'o; -1: kviecia save; 0: SQL klaida (greiciausiai jau pakviestas) 1: pavyko
         if(inviterId==invitedId) return -1;
         Connection con = ConnectionProvider.getCon();
@@ -122,7 +121,6 @@ public class UserManagerDao {
             }
         }
         return success;
->>>>>>> origin/master
     }
 
     public static int attend(int eventId, int userId) { //-1: nekviestas; -2: SQL klaida; -3: toks jau yra; 1: suveike
