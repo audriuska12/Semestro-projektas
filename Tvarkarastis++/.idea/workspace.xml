@@ -2,87 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e3007fd-a1b6-47f1-b08f-d6fbf2ff3ec0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/tvarkarastis/controller/EventController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/tvarkarastis/controller/MessageController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/tvarkarastis/controller/UserController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/messages.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/newEventForm.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/newMessageForm.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/tagHeader.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/userMenuHeader.jsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/loginprocess.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/registerprocess.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/loginprocess.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/logout.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/registerprocess.jsp" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/logout.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/inviteForm.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/com/tvarkarastis/config/WebConfig.class" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/com/tvarkarastis/config/WebConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/com/tvarkarastis/controller/HomeController.class" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/com/tvarkarastis/controller/HomeController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/com/tvarkarastis/dao/EventManagerDao.class" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/com/tvarkarastis/dao/EventManagerDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/com/tvarkarastis/dao/UserManagerDao.class" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/com/tvarkarastis/dao/UserManagerDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/com/tvarkarastis/entity/Event.class" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/com/tvarkarastis/entity/Event.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/tvarkarastis/config/WebConfig.class" afterPath="$PROJECT_DIR$/target/classes/com/tvarkarastis/config/WebConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/tvarkarastis/controller/HomeController.class" afterPath="$PROJECT_DIR$/target/classes/com/tvarkarastis/controller/HomeController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/tvarkarastis/dao/EventManagerDao.class" afterPath="$PROJECT_DIR$/target/classes/com/tvarkarastis/dao/EventManagerDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/tvarkarastis/dao/UserManagerDao.class" afterPath="$PROJECT_DIR$/target/classes/com/tvarkarastis/dao/UserManagerDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/tvarkarastis/entity/Event.class" afterPath="$PROJECT_DIR$/target/classes/com/tvarkarastis/entity/Event.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/Tvarkarastis___war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/Tvarkarastis___war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tvarkarastis++.iml" afterPath="$PROJECT_DIR$/Tvarkarastis++.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tvarkarastis/config/WebConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/tvarkarastis/config/WebConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tvarkarastis/controller/HomeController.java" afterPath="$PROJECT_DIR$/src/main/java/com/tvarkarastis/controller/HomeController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tvarkarastis/dao/EventManagerDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/tvarkarastis/dao/EventManagerDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tvarkarastis/dao/MessageManagerDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/tvarkarastis/dao/MessageManagerDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tvarkarastis/dao/UserManagerDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/tvarkarastis/dao/UserManagerDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tvarkarastis/entity/Event.java" afterPath="$PROJECT_DIR$/src/main/java/com/tvarkarastis/entity/Event.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tvarkarastis/entity/Message.java" afterPath="$PROJECT_DIR$/src/main/java/com/tvarkarastis/entity/Message.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/messages.properties" afterPath="$PROJECT_DIR$/src/main/resources/messages.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/messages_en_US.properties" afterPath="$PROJECT_DIR$/src/main/resources/messages_en_US.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/messages_lt_LT.properties" afterPath="$PROJECT_DIR$/src/main/resources/messages_lt_LT.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/MethodTester.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/MethodTester.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/attends.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/attends.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/document.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/document.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/form.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/form.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/link.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/link.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/menu.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/menu.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/table.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/table.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/variables.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/variables.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/footer.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/footer.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/header.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/header.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/hostedBy.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/hostedBy.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/invitations.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/invitations.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/profile.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/profile.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/publicEvents.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/publicEvents.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/register.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/register.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/stylesheetsHeader.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/stylesheetsHeader.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/MethodTester.jsp" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/MethodTester.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/messages.properties" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/messages.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/messages_en_US.properties" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/messages_en_US.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/messages_lt_LT.properties" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/WEB-INF/classes/messages_lt_LT.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/attends.jsp" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/attends.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/css/document.css" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/css/document.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/css/form.css" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/css/form.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/css/link.css" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/css/link.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/css/menu.css" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/css/menu.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/css/table.css" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/css/table.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/css/variables.css" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/css/variables.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/footer.jsp" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/footer.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/header.jsp" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/header.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/hostedBy.jsp" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/hostedBy.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/index.jsp" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/invitations.jsp" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/invitations.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/login.jsp" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/profile.jsp" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/profile.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/publicEvents.jsp" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/publicEvents.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/register.jsp" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/register.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/stylesheetsHeader.jsp" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/stylesheetsHeader.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/messages.properties" afterPath="$PROJECT_DIR$/target/classes/messages.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/messages_en_US.properties" afterPath="$PROJECT_DIR$/target/classes/messages_en_US.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/messages_lt_LT.properties" afterPath="$PROJECT_DIR$/target/classes/messages_lt_LT.properties" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -204,7 +124,7 @@
           <file leaf-file-name="EventController.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/tvarkarastis/controller/EventController.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="155">
+                <state relative-caret-position="237">
                   <caret line="106" column="62" lean-forward="false" selection-start-line="106" selection-start-column="62" selection-end-line="106" selection-end-column="62" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -1373,7 +1293,7 @@
       <workItem from="1494827784589" duration="107000" />
       <workItem from="1494828369777" duration="1175000" />
       <workItem from="1494831303591" duration="23570000" />
-      <workItem from="1494923240343" duration="66618000" />
+      <workItem from="1494923240343" duration="68192000" />
     </task>
     <task id="LOCAL-00001" summary="DateTime cleanup">
       <created>1493015805305</created>
@@ -1407,7 +1327,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="211052000" />
+    <option name="totallyTimeSpent" value="212626000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1420,7 +1340,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1444,7 +1363,7 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41243863" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41243863" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31543118" sideWeight="0.46866485" order="0" side_tool="false" content_ui="combo" />
@@ -1944,7 +1863,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tvarkarastis/controller/EventController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
+        <state relative-caret-position="237">
           <caret line="106" column="62" lean-forward="false" selection-start-line="106" selection-start-column="62" selection-end-line="106" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
