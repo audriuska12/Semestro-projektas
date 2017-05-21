@@ -22,12 +22,28 @@
     <title>Test</title>
 </head>
 <body>
+<table>
+<tr>
+    <th>Name</th>
+    <th>Location</th>
+    <th>Start</th>
+    <th>End</th>
+    <th>Visibility</th>
+</tr>
 <%
-    out.println(UserManagerDao.uninvite(1,1,1));
-    out.println(UserManagerDao.uninvite(2,1,1));
-    out.println(UserManagerDao.uninvite(1,2,2));
-    out.println(UserManagerDao.uninvite(1,2,1));
-    out.println(UserManagerDao.uninvite(1,2,1));
+    Event e = EventManagerDao.getEvent(10);
+    out.println("<tr>");
+    out.println("<td>" + e.getName() + "</td>");
+    out.println("<td>" + e.getLocation() + "</td>");
+    out.println("<td>" + e.getStart().toString() + "</td>");
+    out.println("<td>" + e.getEnd().toString() + "</td>");
+    if (e.isPublic()) {
+        out.println("<td>Public</td");
+    } else {
+        out.println("<td>Private</td>");
+    }
+    out.println("</tr>");
 %>
+</table>
 </body>
 </html>

@@ -13,6 +13,28 @@ import java.util.List;
  */
 public class EventManagerDao {
 
+    public static Event getEvent(int eventId){
+        Connection con = null;
+        PreparedStatement ps = null;
+        Event event = null;
+        try{
+            con = ConnectionProvider.getCon();
+            ps = con.prepareStatement("SELECT * from events WHERE id = ?");
+            ps.setString(1, String.valueOf(eventId));
+            ResultSet rs = ps.executeQuery();
+            if(rs.next()){
+                event = getEventFromRS(rs);
+            }
+        }catch(Exception e){}
+        finally{
+            try{
+                ps.close();
+                con.close();
+            }catch(Exception e){}
+        }
+        return event;
+    }
+
     public static int insertEvent(Event event) { //grazinimo reiksmes: -2: SQL klaida; -1: neteisingi duomenys; 1: teisinga
         if (!event.validate()) return -1;
         Connection con = null;
