@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72fd66ec-8fb7-4b92-bf98-96328c718ad5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT.war" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT.war" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tvarkarastis/controller/EventController.java" afterPath="$PROJECT_DIR$/src/main/java/com/tvarkarastis/controller/EventController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tvarkarastis/dao/EventManagerDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/tvarkarastis/dao/EventManagerDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/MethodTester.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/MethodTester.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/MethodTester.jsp" afterPath="$PROJECT_DIR$/target/Tvarkarastis++-1.0-SNAPSHOT/MethodTester.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -86,41 +88,69 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="UserManagerDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tvarkarastis/dao/UserManagerDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="69" column="61" lean-forward="false" selection-start-line="69" selection-start-column="61" selection-end-line="69" selection-end-column="61" />
+            <state relative-caret-position="986">
+              <caret line="68" column="12" lean-forward="false" selection-start-line="68" selection-start-column="12" selection-end-line="68" selection-end-column="12" />
               <folding>
-                <marker date="1495300740213" expanded="true" signature="586:625" ph="select id fr... users" />
-                <marker date="1495300740213" expanded="true" signature="1201:1233" ph="select * fro... users" />
-                <marker date="1495300740213" expanded="true" signature="2156:2192" ph="SELECT host events" />
-                <marker date="1495300740213" expanded="true" signature="2479:2529" ph="INSERT INTO invitations... " />
-                <marker date="1495300740213" expanded="true" signature="3373:3409" ph="SELECT host events" />
-                <marker date="1495300740213" expanded="true" signature="3698:3750" ph="DELETE FROM " />
-                <marker date="1495300740213" expanded="true" signature="4510:4550" ph="SELECT `publ... events" />
-                <marker date="1495300740213" expanded="true" signature="4908:4961" ph="INSERT INTO `attends`... " />
-                <marker date="1495300740213" expanded="true" signature="5686:5729" ph="DELETE FROM " />
-                <marker date="1495300740213" expanded="true" signature="6549:6595" ph="INSERT INTO follows... " />
-                <marker date="1495300740213" expanded="true" signature="7328:7371" ph="DELETE FROM " />
-                <marker date="1495300740213" expanded="true" signature="8038:8116" ph="select * fro... users" />
-                <marker date="1495300740213" expanded="true" signature="8071:8115" ph="SELECT other... follows" />
-                <marker date="1495300740213" expanded="true" signature="8762:8840" ph="select * fro... users" />
-                <marker date="1495300740213" expanded="true" signature="8795:8839" ph="SELECT this follows" />
-                <marker date="1495300740213" expanded="true" signature="9484:9647" ph="SELECT other... users" />
-                <marker date="1495300740213" expanded="true" signature="10293:10363" ph="SELECT COUNT... invitations" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#1696#1697#0" expanded="false" />
+                <element signature="e#1746#1747#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EventController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tvarkarastis/controller/EventController.java">
+      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="104" column="41" lean-forward="true" selection-start-line="104" selection-start-column="41" selection-end-line="104" selection-end-column="41" />
-              <folding />
+            <state relative-caret-position="2431">
+              <caret line="1581" column="49" lean-forward="false" selection-start-line="1581" selection-start-column="49" selection-end-line="1581" selection-end-column="49" />
+              <folding>
+                <marker date="1495354430355" expanded="true" signature="93223:93240" ph="..." />
+                <marker date="1495354430355" expanded="true" signature="93223:93258" ph="..." />
+                <marker date="1495354430355" expanded="true" signature="93223:93271" ph="..." />
+                <marker date="1495354430355" expanded="true" signature="93223:93286" ph="..." />
+                <marker date="1495354430355" expanded="true" signature="93321:95976" ph="..." />
+                <marker date="1495354430355" expanded="true" signature="93334:95961" ph="..." />
+                <marker date="1495354430355" expanded="true" signature="93388:93778" ph="..." />
+                <marker date="1495354430355" expanded="true" signature="93407:93763" ph="..." />
+                <marker date="1495354430355" expanded="true" signature="93526:93743" ph="..." />
+                <marker date="1495354430355" expanded="true" signature="93566:93709" ph="..." />
+                <marker date="1495354430355" expanded="true" signature="93587:93687" ph="..." />
+                <marker date="1495354430355" expanded="true" signature="93828:94137" ph="..." />
+                <marker date="1495354430355" expanded="true" signature="93847:94122" ph="..." />
+                <marker date="1495354430355" expanded="true" signature="93924:94102" ph="..." />
+                <marker date="1495354430355" expanded="true" signature="93964:94068" ph="..." />
+                <marker date="1495354430355" expanded="true" signature="93985:94046" ph="..." />
+                <marker date="1495354430355" expanded="true" signature="94188:94453" ph="..." />
+                <marker date="1495354430355" expanded="true" signature="94207:94438" ph="..." />
+                <marker date="1495354430355" expanded="true" signature="94240:94418" ph="..." />
+                <marker date="1495354430355" expanded="true" signature="94280:94384" ph="..." />
+                <marker date="1495354430355" expanded="true" signature="94301:94362" ph="..." />
+                <marker date="1495354430355" expanded="true" signature="94496:94802" ph="..." />
+                <marker date="1495354430355" expanded="true" signature="94515:94787" ph="..." />
+                <marker date="1495354430355" expanded="true" signature="94589:94767" ph="..." />
+                <marker date="1495354430355" expanded="true" signature="94629:94733" ph="..." />
+                <marker date="1495354430355" expanded="true" signature="94650:94711" ph="..." />
+                <marker date="1495354430355" expanded="true" signature="94853:95209" ph="..." />
+                <marker date="1495354430355" expanded="true" signature="94872:95194" ph="..." />
+                <marker date="1495354430355" expanded="true" signature="94957:95174" ph="..." />
+                <marker date="1495354430355" expanded="true" signature="94997:95140" ph="..." />
+                <marker date="1495354430355" expanded="true" signature="95018:95118" ph="..." />
+                <marker date="1495354430355" expanded="true" signature="95244:95550" ph="..." />
+                <marker date="1495354430355" expanded="true" signature="95263:95535" ph="..." />
+                <marker date="1495354430355" expanded="true" signature="95337:95515" ph="..." />
+                <marker date="1495354430355" expanded="true" signature="95377:95481" ph="..." />
+                <marker date="1495354430355" expanded="true" signature="95398:95459" ph="..." />
+                <marker date="1495354430355" expanded="true" signature="95602:95947" ph="..." />
+                <marker date="1495354430355" expanded="true" signature="95621:95932" ph="..." />
+                <marker date="1495354430355" expanded="true" signature="95734:95912" ph="..." />
+                <marker date="1495354430355" expanded="true" signature="95774:95878" ph="..." />
+                <marker date="1495354430355" expanded="true" signature="95795:95856" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -128,19 +158,49 @@
       <file leaf-file-name="EventManagerDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tvarkarastis/dao/EventManagerDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3126">
-              <caret line="11" column="15" lean-forward="false" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+            <state relative-caret-position="138">
+              <caret line="15" column="45" lean-forward="false" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
               <folding>
-                <marker date="1495095261214" expanded="true" signature="701:809" ph="insert into events... " />
-                <marker date="1495095261214" expanded="true" signature="1859:1888" ph="DELETE FROM " />
-                <marker date="1495095261214" expanded="true" signature="2727:2762" ph="select * fro... events" />
-                <marker date="1495095261214" expanded="true" signature="3617:3657" ph="select event... attends" />
-                <marker date="1495095261214" expanded="true" signature="3931:3964" ph="select * fro... events" />
-                <marker date="1495095261214" expanded="true" signature="4929:4986" ph="select * fro... events" />
-                <marker date="1495095261214" expanded="true" signature="5873:6043" ph="select * fro... events" />
-                <marker date="1495095261214" expanded="true" signature="5998:6042" ph="SELECT event... attends" />
-                <marker date="1495095261214" expanded="true" signature="7151:7225" ph="SELECT DISTI... " />
+                <element signature="method#getEvent#0;class#EventManagerDao#0" expanded="false" />
+                <element signature="method#insertEvent#0;class#EventManagerDao#0" expanded="false" />
+                <element signature="method#removeEvent#0;class#EventManagerDao#0" expanded="false" />
+                <element signature="method#getEventsOfUser#0;class#EventManagerDao#0" expanded="false" />
+                <element signature="method#getEventsUserAttends#0;class#EventManagerDao#0" expanded="false" />
+                <element signature="method#getPublicEvents#0;class#EventManagerDao#0" expanded="false" />
+                <element signature="method#getInvitedEvents#0;class#EventManagerDao#0" expanded="false" />
+                <element signature="method#getEvents#0;class#EventManagerDao#0" expanded="false" />
+                <element signature="method#getEventFromRS#0;class#EventManagerDao#0" expanded="false" />
+                <marker date="1495354117891" expanded="true" signature="541:574" ph="SELECT * fro... events" />
+                <marker date="1495354117891" expanded="true" signature="1359:1467" ph="insert into events... " />
+                <marker date="1495354117891" expanded="true" signature="2517:2546" ph="DELETE FROM " />
+                <marker date="1495354117891" expanded="true" signature="3385:3420" ph="select * fro... events" />
+                <marker date="1495354117891" expanded="true" signature="4275:4315" ph="select event... attends" />
+                <marker date="1495354117891" expanded="true" signature="4589:4622" ph="select * fro... events" />
+                <marker date="1495354117891" expanded="true" signature="5587:5644" ph="select * fro... events" />
+                <marker date="1495354117891" expanded="true" signature="6531:6701" ph="select * fro... events" />
+                <marker date="1495354117891" expanded="true" signature="6656:6700" ph="SELECT event... attends" />
+                <marker date="1495354117891" expanded="true" signature="7809:7883" ph="SELECT DISTI... " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MethodTester.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/MethodTester.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="407">
+              <caret line="46" column="8" lean-forward="false" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="publicEvents.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/publicEvents.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="407">
+              <caret line="32" column="33" lean-forward="true" selection-start-line="22" selection-start-column="12" selection-end-line="32" selection-end-column="33" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -220,7 +280,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/tvarkarastis/config/RootConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tvarkarastis/config/WebConfig.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/profile.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tvarkarastis/dao/EventManagerDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tvarkarastis/dao/UserManagerDao.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/userMenuHeader.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/register.jsp" />
@@ -241,12 +300,13 @@
         <option value="$PROJECT_DIR$/src/main/java/com/tvarkarastis/controller/MessageController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tvarkarastis/entity/Message.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/newMessageForm.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tvarkarastis/controller/EventController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tvarkarastis/dao/MessageManagerDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tvarkarastis/entity/Event.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tvarkarastis/dao/UserManagerDao.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/MethodTester.jsp" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tvarkarastis/controller/EventController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tvarkarastis/dao/EventManagerDao.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/MethodTester.jsp" />
       </list>
     </option>
   </component>
@@ -354,6 +414,20 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tvarkarastis++" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tvarkarastis++" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -437,50 +511,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tvarkarastis++" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tvarkarastis++" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tvarkarastis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tvarkarastis++" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tvarkarastis++" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
@@ -520,7 +550,79 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Unnamed (1)">
+  <component name="RunManager" selected="Tomcat Server.Tomcat">
+    <configuration default="false" name="MethodTester.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 8.5.13" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/MethodTester.jsp" />
+      <deployment>
+        <artifact name="Tvarkarastis++:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="MethodTester_jsp_Tvarkarastis++" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="2662" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Tvarkarastis++:war" />
+        </option>
+      </method>
+    </configuration>
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
       <deployment />
       <server-settings />
@@ -919,90 +1021,18 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <configuration default="false" name="MethodTester.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.13" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/MethodTester.jsp" />
-      <option name="UPDATING_POLICY" value="hot-swap-classes" />
-      <deployment>
-        <artifact name="Tvarkarastis++:war">
-          <settings>
-            <option name="CONTEXT_PATH" value="/" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="MethodTester_jsp_Tvarkarastis++" />
-      </server-settings>
-      <predefined_log_file id="Tomcat" enabled="true" />
-      <predefined_log_file id="Tomcat Catalina" enabled="true" />
-      <predefined_log_file id="Tomcat Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="2662" />
-      </RunnerSettings>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method>
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="Tvarkarastis++:war" />
-        </option>
-      </method>
-    </configuration>
-    <configuration default="false" name="Unnamed (1)" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.13" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration default="false" name="Tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.13" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="Tvarkarastis++:war">
+        <artifact name="Tvarkarastis++:war exploded">
           <settings>
             <option name="CONTEXT_PATH" value="/" />
           </settings>
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Unnamed_(1)_Tvarkarastis++" />
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_Tvarkarastis++" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
@@ -1011,7 +1041,7 @@
       <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="49907" />
+        <option name="DEBUG_PORT" value="3098" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -1060,14 +1090,19 @@
       </ConfigurationWrapper>
       <method>
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="Tvarkarastis++:war" />
+          <artifact name="Tvarkarastis++:war exploded" />
         </option>
       </method>
     </configuration>
     <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.MethodTester.jsp" />
-      <item index="1" class="java.lang.String" itemvalue="Tomcat Server.Unnamed (1)" />
+      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Tomcat" />
+      <item index="1" class="java.lang.String" itemvalue="Tomcat Server.MethodTester.jsp" />
     </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Tomcat Server.MethodTester.jsp" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -1107,10 +1142,8 @@
       <workItem from="1494831303591" duration="23570000" />
       <workItem from="1494923240343" duration="68192000" />
       <workItem from="1495289357699" duration="2812000" />
-      <workItem from="1495302146519" duration="189000" />
-      <workItem from="1495302370894" duration="144000" />
-      <workItem from="1495304716871" duration="1057000" />
-      <workItem from="1495351115055" duration="563000" />
+      <workItem from="1495302466893" duration="207000" />
+      <workItem from="1495353861959" duration="548000" />
     </task>
     <task id="LOCAL-00001" summary="DateTime cleanup">
       <created>1493015805305</created>
@@ -1144,7 +1177,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125633000" />
+    <option name="totallyTimeSpent" value="124435000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1157,11 +1190,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39770868" sideWeight="0.51059" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39770868" sideWeight="0.5151286" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1173,7 +1205,7 @@
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24960753" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.396072" sideWeight="0.48487142" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39443535" sideWeight="0.48487142" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32405892" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30114567" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1181,10 +1213,10 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31587562" sideWeight="0.48940998" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31587562" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28139183" sideWeight="0.46866485" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2632375" sideWeight="0.46866485" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31164902" sideWeight="0.5313352" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -1214,7 +1246,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="58" />
+      <option name="time" value="59" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1223,43 +1255,65 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25551">
-          <caret line="1503" column="49" lean-forward="false" selection-start-line="1503" selection-start-column="49" selection-end-line="1503" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tvarkarastis/dao/UserManagerDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="237">
           <caret line="65" column="30" lean-forward="true" selection-start-line="65" selection-start-column="30" selection-end-line="65" selection-end-column="30" />
           <folding>
-            <marker date="1495300740213" expanded="true" signature="586:625" ph="select id fr... users" />
-            <marker date="1495300740213" expanded="true" signature="1201:1233" ph="select * fro... users" />
-            <marker date="1495300740213" expanded="true" signature="2156:2192" ph="SELECT host events" />
-            <marker date="1495300740213" expanded="true" signature="2479:2529" ph="INSERT INTO invitations... " />
-            <marker date="1495300740213" expanded="true" signature="3373:3409" ph="SELECT host events" />
-            <marker date="1495300740213" expanded="true" signature="3698:3750" ph="DELETE FROM " />
-            <marker date="1495300740213" expanded="true" signature="4510:4550" ph="SELECT `publ... events" />
-            <marker date="1495300740213" expanded="true" signature="4908:4961" ph="INSERT INTO `attends`... " />
-            <marker date="1495300740213" expanded="true" signature="5686:5729" ph="DELETE FROM " />
-            <marker date="1495300740213" expanded="true" signature="6549:6595" ph="INSERT INTO follows... " />
-            <marker date="1495300740213" expanded="true" signature="7328:7371" ph="DELETE FROM " />
-            <marker date="1495300740213" expanded="true" signature="8038:8116" ph="select * fro... users" />
-            <marker date="1495300740213" expanded="true" signature="8071:8115" ph="SELECT other... follows" />
-            <marker date="1495300740213" expanded="true" signature="8762:8840" ph="select * fro... users" />
-            <marker date="1495300740213" expanded="true" signature="8795:8839" ph="SELECT this follows" />
-            <marker date="1495300740213" expanded="true" signature="9484:9647" ph="SELECT other... users" />
-            <marker date="1495300740213" expanded="true" signature="10293:10363" ph="SELECT COUNT... invitations" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1696#1697#0" expanded="false" />
+            <element signature="e#1746#1747#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1503" column="49" lean-forward="false" selection-start-line="1503" selection-start-column="49" selection-end-line="1503" selection-end-column="49" />
+        <state relative-caret-position="2431">
+          <caret line="1581" column="49" lean-forward="false" selection-start-line="1581" selection-start-column="49" selection-end-line="1581" selection-end-column="49" />
+          <folding>
+            <marker date="1495354430355" expanded="true" signature="93223:93240" ph="..." />
+            <marker date="1495354430355" expanded="true" signature="93223:93258" ph="..." />
+            <marker date="1495354430355" expanded="true" signature="93223:93271" ph="..." />
+            <marker date="1495354430355" expanded="true" signature="93223:93286" ph="..." />
+            <marker date="1495354430355" expanded="true" signature="93321:95976" ph="..." />
+            <marker date="1495354430355" expanded="true" signature="93334:95961" ph="..." />
+            <marker date="1495354430355" expanded="true" signature="93388:93778" ph="..." />
+            <marker date="1495354430355" expanded="true" signature="93407:93763" ph="..." />
+            <marker date="1495354430355" expanded="true" signature="93526:93743" ph="..." />
+            <marker date="1495354430355" expanded="true" signature="93566:93709" ph="..." />
+            <marker date="1495354430355" expanded="true" signature="93587:93687" ph="..." />
+            <marker date="1495354430355" expanded="true" signature="93828:94137" ph="..." />
+            <marker date="1495354430355" expanded="true" signature="93847:94122" ph="..." />
+            <marker date="1495354430355" expanded="true" signature="93924:94102" ph="..." />
+            <marker date="1495354430355" expanded="true" signature="93964:94068" ph="..." />
+            <marker date="1495354430355" expanded="true" signature="93985:94046" ph="..." />
+            <marker date="1495354430355" expanded="true" signature="94188:94453" ph="..." />
+            <marker date="1495354430355" expanded="true" signature="94207:94438" ph="..." />
+            <marker date="1495354430355" expanded="true" signature="94240:94418" ph="..." />
+            <marker date="1495354430355" expanded="true" signature="94280:94384" ph="..." />
+            <marker date="1495354430355" expanded="true" signature="94301:94362" ph="..." />
+            <marker date="1495354430355" expanded="true" signature="94496:94802" ph="..." />
+            <marker date="1495354430355" expanded="true" signature="94515:94787" ph="..." />
+            <marker date="1495354430355" expanded="true" signature="94589:94767" ph="..." />
+            <marker date="1495354430355" expanded="true" signature="94629:94733" ph="..." />
+            <marker date="1495354430355" expanded="true" signature="94650:94711" ph="..." />
+            <marker date="1495354430355" expanded="true" signature="94853:95209" ph="..." />
+            <marker date="1495354430355" expanded="true" signature="94872:95194" ph="..." />
+            <marker date="1495354430355" expanded="true" signature="94957:95174" ph="..." />
+            <marker date="1495354430355" expanded="true" signature="94997:95140" ph="..." />
+            <marker date="1495354430355" expanded="true" signature="95018:95118" ph="..." />
+            <marker date="1495354430355" expanded="true" signature="95244:95550" ph="..." />
+            <marker date="1495354430355" expanded="true" signature="95263:95535" ph="..." />
+            <marker date="1495354430355" expanded="true" signature="95337:95515" ph="..." />
+            <marker date="1495354430355" expanded="true" signature="95377:95481" ph="..." />
+            <marker date="1495354430355" expanded="true" signature="95398:95459" ph="..." />
+            <marker date="1495354430355" expanded="true" signature="95602:95947" ph="..." />
+            <marker date="1495354430355" expanded="true" signature="95621:95932" ph="..." />
+            <marker date="1495354430355" expanded="true" signature="95734:95912" ph="..." />
+            <marker date="1495354430355" expanded="true" signature="95774:95878" ph="..." />
+            <marker date="1495354430355" expanded="true" signature="95795:95856" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1404,6 +1458,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tvarkarastis/dao/UserManagerDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="68" column="12" lean-forward="false" selection-start-line="68" selection-start-column="12" selection-end-line="68" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1696#1697#0" expanded="false" />
+            <element signature="e#1746#1747#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tvarkarastis/dao/LoginDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
@@ -1483,6 +1549,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/messages.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-66">
+          <caret line="71" column="25" lean-forward="false" selection-start-line="71" selection-start-column="25" selection-end-line="71" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/newEventForm.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="518">
@@ -1505,13 +1578,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/newMessageForm.jsp" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/MethodTester.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="27" column="43" lean-forward="false" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tvarkarastis/controller/MessageController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-134">
@@ -1519,62 +1585,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/messages.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tvarkarastis/controller/EventController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-187">
-          <caret line="71" column="25" lean-forward="false" selection-start-line="71" selection-start-column="25" selection-end-line="71" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tvarkarastis/dao/UserManagerDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="69" column="61" lean-forward="false" selection-start-line="69" selection-start-column="61" selection-end-line="69" selection-end-column="61" />
-          <folding>
-            <marker date="1495300740213" expanded="true" signature="586:625" ph="select id fr... users" />
-            <marker date="1495300740213" expanded="true" signature="1201:1233" ph="select * fro... users" />
-            <marker date="1495300740213" expanded="true" signature="2156:2192" ph="SELECT host events" />
-            <marker date="1495300740213" expanded="true" signature="2479:2529" ph="INSERT INTO invitations... " />
-            <marker date="1495300740213" expanded="true" signature="3373:3409" ph="SELECT host events" />
-            <marker date="1495300740213" expanded="true" signature="3698:3750" ph="DELETE FROM " />
-            <marker date="1495300740213" expanded="true" signature="4510:4550" ph="SELECT `publ... events" />
-            <marker date="1495300740213" expanded="true" signature="4908:4961" ph="INSERT INTO `attends`... " />
-            <marker date="1495300740213" expanded="true" signature="5686:5729" ph="DELETE FROM " />
-            <marker date="1495300740213" expanded="true" signature="6549:6595" ph="INSERT INTO follows... " />
-            <marker date="1495300740213" expanded="true" signature="7328:7371" ph="DELETE FROM " />
-            <marker date="1495300740213" expanded="true" signature="8038:8116" ph="select * fro... users" />
-            <marker date="1495300740213" expanded="true" signature="8071:8115" ph="SELECT other... follows" />
-            <marker date="1495300740213" expanded="true" signature="8762:8840" ph="select * fro... users" />
-            <marker date="1495300740213" expanded="true" signature="8795:8839" ph="SELECT this follows" />
-            <marker date="1495300740213" expanded="true" signature="9484:9647" ph="SELECT other... users" />
-            <marker date="1495300740213" expanded="true" signature="10293:10363" ph="SELECT COUNT... invitations" />
-          </folding>
+        <state relative-caret-position="237">
+          <caret line="106" column="62" lean-forward="false" selection-start-line="106" selection-start-column="62" selection-end-line="106" selection-end-column="62" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tvarkarastis/dao/EventManagerDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3126">
-          <caret line="11" column="15" lean-forward="false" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+        <state relative-caret-position="138">
+          <caret line="15" column="45" lean-forward="false" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
           <folding>
-            <marker date="1495095261214" expanded="true" signature="701:809" ph="insert into events... " />
-            <marker date="1495095261214" expanded="true" signature="1859:1888" ph="DELETE FROM " />
-            <marker date="1495095261214" expanded="true" signature="2727:2762" ph="select * fro... events" />
-            <marker date="1495095261214" expanded="true" signature="3617:3657" ph="select event... attends" />
-            <marker date="1495095261214" expanded="true" signature="3931:3964" ph="select * fro... events" />
-            <marker date="1495095261214" expanded="true" signature="4929:4986" ph="select * fro... events" />
-            <marker date="1495095261214" expanded="true" signature="5873:6043" ph="select * fro... events" />
-            <marker date="1495095261214" expanded="true" signature="5998:6042" ph="SELECT event... attends" />
-            <marker date="1495095261214" expanded="true" signature="7151:7225" ph="SELECT DISTI... " />
+            <element signature="method#getEvent#0;class#EventManagerDao#0" expanded="false" />
+            <element signature="method#insertEvent#0;class#EventManagerDao#0" expanded="false" />
+            <element signature="method#removeEvent#0;class#EventManagerDao#0" expanded="false" />
+            <element signature="method#getEventsOfUser#0;class#EventManagerDao#0" expanded="false" />
+            <element signature="method#getEventsUserAttends#0;class#EventManagerDao#0" expanded="false" />
+            <element signature="method#getPublicEvents#0;class#EventManagerDao#0" expanded="false" />
+            <element signature="method#getInvitedEvents#0;class#EventManagerDao#0" expanded="false" />
+            <element signature="method#getEvents#0;class#EventManagerDao#0" expanded="false" />
+            <element signature="method#getEventFromRS#0;class#EventManagerDao#0" expanded="false" />
+            <marker date="1495354117891" expanded="true" signature="541:574" ph="SELECT * fro... events" />
+            <marker date="1495354117891" expanded="true" signature="1359:1467" ph="insert into events... " />
+            <marker date="1495354117891" expanded="true" signature="2517:2546" ph="DELETE FROM " />
+            <marker date="1495354117891" expanded="true" signature="3385:3420" ph="select * fro... events" />
+            <marker date="1495354117891" expanded="true" signature="4275:4315" ph="select event... attends" />
+            <marker date="1495354117891" expanded="true" signature="4589:4622" ph="select * fro... events" />
+            <marker date="1495354117891" expanded="true" signature="5587:5644" ph="select * fro... events" />
+            <marker date="1495354117891" expanded="true" signature="6531:6701" ph="select * fro... events" />
+            <marker date="1495354117891" expanded="true" signature="6656:6700" ph="SELECT event... attends" />
+            <marker date="1495354117891" expanded="true" signature="7809:7883" ph="SELECT DISTI... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tvarkarastis/controller/EventController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/publicEvents.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="104" column="41" lean-forward="true" selection-start-line="104" selection-start-column="41" selection-end-line="104" selection-end-column="41" />
+        <state relative-caret-position="407">
+          <caret line="32" column="33" lean-forward="true" selection-start-line="22" selection-start-column="12" selection-end-line="32" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/MethodTester.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="46" column="8" lean-forward="false" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
           <folding />
         </state>
       </provider>
