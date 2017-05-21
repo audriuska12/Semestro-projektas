@@ -102,7 +102,6 @@ public class EventController {
 //    @GetMapping("/invite/id={eventID}")
 //    public String invite(@PathVariable int eventID, ModelMap modelMap, HttpSession session) {
 //
-//
 //        User userToInvite = new User();
 //        Event thisEvent = EventManagerDao.getEvent(eventID);
 //        modelMap.put("event", thisEvent);
@@ -110,10 +109,13 @@ public class EventController {
 //
 //        return "inviteForm";
 //    }
-//
-//    @PostMapping("/invite")
-//    public String invite(@ModelAttribute Event event, User user) {
-//        UserManagerDao.invite(user.getUsername(), event.getId());
-//        return "redirect:/hostedBy";
-//    }
+
+    @PostMapping("/invite")
+    public String invite(@ModelAttribute Event event, User user, HttpSession session) {
+        int inviterID = UserManagerDao.getUserId((String)session.getAttribute("username"));
+        int invitedID = user.getId();
+
+        UserManagerDao.invite(inviterID, invitedID, event.getId());
+        return "redirect:/hostedBy";
+    }
 }
